@@ -1,3 +1,7 @@
+---
+description: "코로나 페이지 관련 API 입니다\U0001F609"
+---
+
 # 메인 페이지
 
 | name | type | description |
