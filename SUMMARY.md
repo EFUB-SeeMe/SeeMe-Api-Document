@@ -4,8 +4,8 @@
 
 ## 날씨 <a id="undefined-3"></a>
 
-* [메인 페이지](undefined-3/undefined.md)
-* [시간대별 기온 페이지](undefined-3/undefined-1.md)
+* [메인 페이지](undefined-3/weather_main.md)
+* [시간대별 기온 페이지](undefined-3/weather_temp_time.md)
 * [시간대별 강수량 페이지](undefined-3/undefined-2.md)
 * [ootd 추천 페이지](undefined-3/ootd.md)
 * [이번주 날씨 페이지](undefined-3/undefined-3.md)
