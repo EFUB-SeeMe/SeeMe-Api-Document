@@ -10,6 +10,8 @@ GET /weather/weekly
 ```
 
 ## 2) RESPONSE BODY
+### success
+HTTP Status code: `200 OK`
 
 ### Description
 
