@@ -92,7 +92,7 @@ HTTP Status code: `200 OK`
             "pm_icon": "~~~.png",
             "max": 29,
             "min": 21
-        },
+        }
     ]
 }
 ```
