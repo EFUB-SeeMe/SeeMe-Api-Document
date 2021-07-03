@@ -1,7 +1,6 @@
 ---
-이번주 날씨를 알려주는 api
+description: "이번주 날씨를 알려주는 api"
 ---
-
 # 이번주 날씨 페이지
 
 ## URL
@@ -9,8 +8,6 @@
 ```
 GET /weather/weekly
 ```
-
-
 
 ## RESPONSE BODY
 
