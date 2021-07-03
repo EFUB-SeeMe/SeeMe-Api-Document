@@ -3,13 +3,13 @@ description: "이번주 날씨를 알려주는 api"
 ---
 # 이번주 날씨 페이지
 
-## URL
+## 1) URL
 
 ```
 GET /weather/weekly
 ```
 
-## RESPONSE BODY
+## 2) RESPONSE BODY
 
 ### Description
 
@@ -95,7 +95,7 @@ GET /weather/weekly
 }
 ```
 
-## ERROR CODE
+## 3) ERROR CODE
 
 | error code | error message         | description    |
 | ---------- | --------------------- | -------------- |
