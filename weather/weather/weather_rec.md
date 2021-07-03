@@ -1,8 +1,12 @@
+---
+description: 날씨에 따른 옷을 추천해주는 api
+---
+
 # OOTD 추천 페이지
 
-### 날씨에 따른 옷을 추천해주는 api
+## 1) URL
 
-## OOTD 추천 페이지
+## 2) RESPONSE BODY
 
 | name | type | description |
 | :---: | :---: | :--- |
@@ -18,4 +22,10 @@
 | top | string | 강수량 |
 | bottom | string | 강수 확률 |
 | shoes | string | 신발 아이콘 URL |
+
+## 3) ERROR CODE
+
+| error code | error message           | description    |
+| :--------- | :---------------------- | :------------- |
+| 500        | INTERNAL\_SERVER\_ERROR | 서버 내부 에러 |
 
