@@ -8,3 +8,4 @@
 | day | string | 날짜 |
 | coronic | unsigned int | 요일별 확진자 수 |
 
+주은 수정;
