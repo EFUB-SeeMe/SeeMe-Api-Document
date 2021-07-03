@@ -1,4 +1,4 @@
-# 전국 확진자 추이 페이지
+# 지역 확진자 추이 페이지
 
 | name | type | description |
 | :---: | :---: | :---: |
@@ -8,4 +8,5 @@
 | day | string | 날짜 |
 | coronic | unsigned int | 요일별 확진자 수 |
 
-주은수정2
+주은 수정;
+
