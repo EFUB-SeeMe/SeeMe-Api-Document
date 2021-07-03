@@ -1,6 +1,7 @@
 ---
 description: "미세먼지 페이지 관련 API 입니다\U0001F60A"
 ---
+영감탱 내 얼굴 안 나오면 가만안둬
 
 # 메인 페이지 
 |   name    |  type  |     description      |
