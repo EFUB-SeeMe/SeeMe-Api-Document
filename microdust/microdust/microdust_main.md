@@ -1,8 +1,6 @@
 ---
-description: "미세먼지 페이지 관련 API 입니다\U0001F60A"
+description: "미세먼지 페이지 관련 API입니다😊"
 ---
-
-
 
 # 메인 페이지
 
@@ -25,7 +23,7 @@ HTTP Status code : `200 OK`
 ### Description
 
 | name | type | description |
-| :---: | :---: | :---: |
+| :---- | :---- | :---- |
 | location | string | 위치 |
 | icon | string | 아이콘 이미지 URL |
 | icon\_code | string | 현재 미세먼지 상태 |
