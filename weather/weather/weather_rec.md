@@ -6,6 +6,10 @@ description: 날씨에 따른 옷을 추천해주는 api
 
 ## 1) URL
 
+```
+GET /weather/ootd
+```
+
 ## 2) RESPONSE BODY
 
 | name | type | description |
