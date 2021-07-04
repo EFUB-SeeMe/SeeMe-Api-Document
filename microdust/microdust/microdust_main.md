@@ -6,7 +6,7 @@ description: "미세먼지 페이지 관련 API 입니다\U0001F60A"
 
 # 메인 페이지
 
-### 1) URL
+## 1) URL
 
 ```
 GET /microdust/main
@@ -14,15 +14,15 @@ GET /microdust/main
 
 
 
-### 2) RESPONSE BODY
+## 2) RESPONSE BODY
 
-#### Success http status code
+### Success http status code
 
 HTTP Status code : `200 OK`
 
 
 
-#### Description
+### Description
 
 | name | type | description |
 | :---: | :---: | :---: |
@@ -35,7 +35,7 @@ HTTP Status code : `200 OK`
 
 
 
-#### Example
+### Example
 
 ```java
 {
@@ -50,7 +50,7 @@ HTTP Status code : `200 OK`
 
 
 
-### 3) ERROR CODE
+## 3) ERROR CODE
 
 | error code | error message         | description    |
 | ---------- | --------------------- | -------------- |
