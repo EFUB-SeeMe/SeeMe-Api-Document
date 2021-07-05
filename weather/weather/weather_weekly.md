@@ -2,7 +2,7 @@
 description: 이번주 날씨를 알려주는 api
 ---
 
-# 이번주 날씨
+# 이번주 날씨 페이지
 
 ## 1\) URL
 
@@ -30,7 +30,7 @@ HTTP Status code: `200 OK`
 
 ### Example
 
-```json
+```javascript
 {
     [
         {
