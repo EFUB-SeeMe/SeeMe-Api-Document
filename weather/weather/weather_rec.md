@@ -18,7 +18,7 @@ HTTP Status code: `200 OK`
 
 ### Description
 
-![image](https://user-images.githubusercontent.com/68107000/124440901-19b4d580-ddb6-11eb-8c94-67a693c80e91.png)
+![](https://user-images.githubusercontent.com/68107000/124440901-19b4d580-ddb6-11eb-8c94-67a693c80e91.png)
 
 | name | type | description |
 | :---: | :---: | :--- |

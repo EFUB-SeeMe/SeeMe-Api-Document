@@ -18,7 +18,7 @@ GET /weather/main
 
 ### Description
 
-![image](https://user-images.githubusercontent.com/68107000/124440780-f427cc00-ddb5-11eb-859f-a3d9d53492eb.png)
+![](https://user-images.githubusercontent.com/68107000/124440780-f427cc00-ddb5-11eb-859f-a3d9d53492eb.png)
 
 | name | type | description |
 | :---: | :---: | :--- |
