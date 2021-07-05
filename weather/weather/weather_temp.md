@@ -4,6 +4,12 @@ description: 시간대별 기온을 제공하는 api
 
 # 시간대별 기온 페이지
 
+## 1) URL
+
+```
+GET /weather/temp
+```
+
 ## 2\) RESPONSE BODY
 
 ### Success http status code
@@ -11,6 +17,8 @@ description: 시간대별 기온을 제공하는 api
 HTTP Status code: `200 OK`
 
 ### Description
+
+![image](https://user-images.githubusercontent.com/68107000/124440085-31d82500-ddb5-11eb-9a1e-b9cc888a4380.png)
 
 | name | type | description |
 | :---: | :---: | :--- |

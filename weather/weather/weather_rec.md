@@ -1,5 +1,5 @@
 ---
-description: 날씨에 따른 옷을 추천해주는 api
+description: 날씨에 따른 옷을 추천해주는 api, 미완성-고민 중!
 ---
 
 # OOTD 추천 페이지
@@ -12,6 +12,14 @@ GET /weather/ootd
 
 ## 2\) RESPONSE BODY
 
+### Success http status code
+
+HTTP Status code: `200 OK`
+
+### Description
+
+![image](https://user-images.githubusercontent.com/68107000/124440901-19b4d580-ddb6-11eb-8c94-67a693c80e91.png)
+
 | name | type | description |
 | :---: | :---: | :--- |
 | umbrella\_icon | string | 우산 icon URL |
@@ -22,10 +30,18 @@ GET /weather/ootd
 
 | name | type | description |
 | :---: | :---: | :--- |
-| age | int | 시간 |
+| age | int | 나이대 |
 | top | string | 강수량 |
 | bottom | string | 강수 확률 |
 | shoes | string | 신발 아이콘 URL |
+
+### Example
+
+```
+업데이트 예정
+```
+
+
 
 ## 3\) ERROR CODE
 

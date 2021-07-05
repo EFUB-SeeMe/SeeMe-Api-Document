@@ -1,22 +1,24 @@
+---
+description: "날씨 페이지 관련 API 입니다\U0001F60E"
+---
+
 # 메인 페이지
 
-### description: "날씨 페이지 관련 API 입니다\U0001F60E"ㅂ
-
-## 핵심 정보
-
-### 1\) URL
+## 1\) URL
 
 ```text
 GET /weather/main
 ```
 
-### 2\) RESPONSE BODY
+## 2\) RESPONSE BODY
 
-#### Success http status code
+### Success http status code
 
 `200 OK`
 
-#### Description
+### Description
+
+![image](https://user-images.githubusercontent.com/68107000/124440780-f427cc00-ddb5-11eb-859f-a3d9d53492eb.png)
 
 | name | type | description |
 | :---: | :---: | :--- |
@@ -30,7 +32,7 @@ GET /weather/main
 | desc | string | 오늘 날씨에 대한 설명 |
 | comp | string | 전날과의 비교 설명 |
 
-#### Example
+### Example
 
 ```javascript
 {
@@ -46,7 +48,7 @@ GET /weather/main
 }
 ```
 
-### 3\) ERROR CODE
+## 3\) ERROR CODE
 
 | error code | error message | description |
 | :--- | :--- | :--- |
