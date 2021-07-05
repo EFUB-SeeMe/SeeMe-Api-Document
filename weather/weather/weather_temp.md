@@ -23,9 +23,8 @@ HTTP Status code: `200 OK`
 | name | type | description |
 | :---: | :---: | :--- |
 | time | string | 시간 |
-| rain | int | 강수량 |
-| percent | int | 강수 확률 |
-| icon | string | 아이콘 URL |
+| temperature | int | 온도 |
+|    icon     | string | 아이콘 URL  |
 
 ### Example
 
@@ -33,37 +32,37 @@ HTTP Status code: `200 OK`
 {
     [
         {
-            "time": 18,
+            "time": "현재",
             "temp": 26,
             "icon": "https://user-images.githubusercontent.com/68107000/124224687-19f86b00-db41-11eb-9090-d2b32f38fa67.png" 
         },
         {
-            "time": 19,
+            "time": "18시",
             "temp": 24,
             "icon": "https://user-images.githubusercontent.com/68107000/124224687-19f86b00-db41-11eb-9090-d2b32f38fa67.png"
         },
         {
-            "time": 20,
+            "time": "19시",
             "temp": 23,
             "icon": "https://user-images.githubusercontent.com/68107000/124224687-19f86b00-db41-11eb-9090-d2b32f38fa67.png"
         },
         {
-            "time": 21,
+            "time": "20시",
             "temp": 22,
             "icon": "https://user-images.githubusercontent.com/68107000/124224687-19f86b00-db41-11eb-9090-d2b32f38fa67.png"
         },
         {
-            "time": 22,
+            "time": "21시",
             "temp": 22,
             "icon": "https://user-images.githubusercontent.com/68107000/124224687-19f86b00-db41-11eb-9090-d2b32f38fa67.png"
         },
         {
-            "time": 23,
+            "time": "22시",
             "temp": 22,
             "icon": "https://user-images.githubusercontent.com/68107000/174224687-19f86b00-db41-11eb-9090-d2b32f38fa67.png"
         },
         {
-            "time": 12,
+            "time": "23시",
             "temp": 21,
             "icon": "https://user-images.githubusercontent.com/68107000/174224687-19f86b00-db41-11eb-9090-d2b32f38fa67.png"
         }
