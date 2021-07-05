@@ -18,6 +18,8 @@ HTTP Status code: `200 OK`
 
 ### Description
 
+![image](https://user-images.githubusercontent.com/68107000/124440085-31d82500-ddb5-11eb-9a1e-b9cc888a4380.png)
+
 | name | type | description |
 | :---: | :---: | :--- |
 | time | string | 시간 |
