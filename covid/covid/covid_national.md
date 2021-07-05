@@ -64,3 +64,5 @@ HTTP Status code: `200 OK`
 | :--- | :--- | :--- |
 | 500 | INTERNAL\_SERVER\_ERROR | 서버 내부 에 |
 
+
+
