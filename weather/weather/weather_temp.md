@@ -1,5 +1,5 @@
 ---
-description: 시간대별 기온을 제공하는 api
+description: 시간대별 기온을 제공하는 API
 ---
 
 # 시간대별 기온 페이지
@@ -14,7 +14,7 @@ GET /weather/temp
 
 ### Success http status code
 
-HTTP Status code: `200 OK`
+`200 OK`
 
 ### Description
 
@@ -23,51 +23,64 @@ HTTP Status code: `200 OK`
 | name | type | description |
 | :---: | :---: | :--- |
 | time | string | 시간 |
-| temperature | int | 온도 |
+| temperature | string | 온도 |
 |    icon     | string | 아이콘 URL  |
 
 ### Example
 
 ```javascript
-{
-    [
-        {
-            "time": "현재",
-            "temp": 26,
-            "icon": "https://user-images.githubusercontent.com/68107000/124224687-19f86b00-db41-11eb-9090-d2b32f38fa67.png" 
-        },
-        {
-            "time": "18시",
-            "temp": 24,
-            "icon": "https://user-images.githubusercontent.com/68107000/124224687-19f86b00-db41-11eb-9090-d2b32f38fa67.png"
-        },
-        {
-            "time": "19시",
-            "temp": 23,
-            "icon": "https://user-images.githubusercontent.com/68107000/124224687-19f86b00-db41-11eb-9090-d2b32f38fa67.png"
-        },
-        {
-            "time": "20시",
-            "temp": 22,
-            "icon": "https://user-images.githubusercontent.com/68107000/124224687-19f86b00-db41-11eb-9090-d2b32f38fa67.png"
-        },
-        {
-            "time": "21시",
-            "temp": 22,
-            "icon": "https://user-images.githubusercontent.com/68107000/124224687-19f86b00-db41-11eb-9090-d2b32f38fa67.png"
-        },
-        {
-            "time": "22시",
-            "temp": 22,
-            "icon": "https://user-images.githubusercontent.com/68107000/174224687-19f86b00-db41-11eb-9090-d2b32f38fa67.png"
-        },
-        {
-            "time": "23시",
-            "temp": 21,
-            "icon": "https://user-images.githubusercontent.com/68107000/174224687-19f86b00-db41-11eb-9090-d2b32f38fa67.png"
-        }
-    ]
-}
+[
+  {
+    "time": "현재",
+    "temperature": "25°",
+    "icon": "https://seeme.png"
+  },
+  {
+    "time": "10시",
+    "temperature": "26°",
+    "icon": "https://seeme.png"
+  },
+  {
+    "time": "11시",
+    "temperature": "27°",
+    "icon": "https://seeme.png"
+  },
+  {
+    "time": "12시",
+    "temperature": "28°",
+    "icon": "https://seeme.png"
+  },
+  {
+    "time": "13시",
+    "temperature": "29°",
+    "icon": "https://seeme.png"
+  },
+  {
+    "time": "14시",
+    "temperature": "29°",
+    "icon": "https://seeme.png"
+  },
+  {
+    "time": "15시",
+    "temperature": "29°",
+    "icon": "https://seeme.png"
+  },
+  {
+    "time": "18시",
+    "temperature": "28°",
+    "icon": "https://seeme.png"
+  },
+  {
+    "time": "21시",
+    "temperature": "28°",
+    "icon": "https://seeme.png"
+  },
+  {
+    "time": "0시",
+    "temperature": "27°",
+    "icon": "https://seeme.png"
+  }
+]
 ```
 
 ## 3\) ERROR CODE
