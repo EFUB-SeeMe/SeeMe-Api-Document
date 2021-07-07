@@ -18,6 +18,8 @@ HTTP Status code : `200 OK`
 
 ### Description
 
+![image-20210707172313521](C:\Users\mook1\AppData\Roaming\Typora\typora-user-images\image-20210707172313521.png)
+
 | name | type | description |
 | :--- | :--- | :--- |
 | desc | string | 마스크 추천 설명 |

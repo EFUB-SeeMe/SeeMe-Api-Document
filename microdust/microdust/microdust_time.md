@@ -18,6 +18,8 @@ HTTP Status code : `200 OK`
 
 ### Description
 
+![image-20210707172444481](C:\Users\mook1\AppData\Roaming\Typora\typora-user-images\image-20210707172444481.png)
+
 | name | type | description |
 | :--- | :--- | :--- |
 | time | string | 시간 표시\(24시간제\) |

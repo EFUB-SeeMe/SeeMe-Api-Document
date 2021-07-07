@@ -18,6 +18,8 @@ HTTP Status code : `200 OK`
 
 ### Description
 
+![image-20210707172347451](C:\Users\mook1\AppData\Roaming\Typora\typora-user-images\image-20210707172347451.png)
+
 | name | type | description |
 | :--- | :--- | :--- |
 | dust\_am | int | 오전 평균 미세먼지 농도 |
