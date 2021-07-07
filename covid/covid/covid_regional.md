@@ -22,8 +22,8 @@ GET /covid/regional
 
 | name  |      type      | description        |
 | :---: | :---: | :---- |
-|  new  |  unsigned int  | 신규 확진자 수     |
-| total |  unsigned int  | 누적 확진자 수     |
+|  newCoronic  |  unsigned int  | 신규 확진자 수     |
+| totalCoronic |  unsigned int  | 누적 확진자 수     |
 | graph | `coronic_list` | 확진자 추이 그래프 |
 
 - `coronic_list`
@@ -37,8 +37,8 @@ GET /covid/regional
 
 ```yaml
 {
-	"new": 334
-	"total": 157723
+	"newCoronic": 334
+	"totalCoronic": 157723
 	"graph" :
 		[
 			{
