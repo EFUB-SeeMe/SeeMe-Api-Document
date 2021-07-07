@@ -14,17 +14,24 @@ GET /covid/regional
 
 ### Success http status code
 
-HTTP Status code: `200 OK`
+`200 OK`
 
 ### Description
 
-| name | type | description |
-| :---: | :---: | :---: |
-| new | unsigned int | 신규 확진자 수 |
-| total | unsigned int | 누적 확진자 수 |
-| graph | list | 확진자 추이 그래프 |
-| day | string | 날짜 |
-| coronic | unsigned int | 요일별 확진자 수 |
+![image](https://user-images.githubusercontent.com/68107000/124695165-a62dd800-df1d-11eb-92a5-73e2a7613a0d.png)
+
+| name  |      type      | description        |
+| :---: | :---: | :---- |
+|  new  |  unsigned int  | 신규 확진자 수     |
+| total |  unsigned int  | 누적 확진자 수     |
+| graph | `coronic_list` | 확진자 추이 그래프 |
+
+- `coronic_list`
+
+- |  name   |     type     | description      |
+  | :-----: | :----------: | ---------------- |
+  |   day   |    string    | 날짜             |
+  | coronic | unsigned int | 요일별 확진자 수 |
 
 ### Example
 
@@ -51,7 +58,7 @@ HTTP Status code: `200 OK`
 				"coronic": 185
 			},
 			{
-				"day": "현재",
+				"day": "06.27",
 				"coronic": 205
 			}
 		]
