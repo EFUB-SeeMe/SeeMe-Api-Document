@@ -18,7 +18,7 @@ HTTP Status code : `200 OK`
 
 ### Description
 
-![image-20210707172444481](C:\Users\mook1\AppData\Roaming\Typora\typora-user-images\image-20210707172444481.png)
+![image](https://user-images.githubusercontent.com/68282057/124726460-bdce8600-df48-11eb-9801-f220615a8b61.png)
 
 | name | type | description |
 | :--- | :--- | :--- |
