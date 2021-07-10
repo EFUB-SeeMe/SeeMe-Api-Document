@@ -6,9 +6,24 @@ description: 전국 확진자 수와 지역 확진자 수를 알려주는 api
 
 ## 1\) URL
 
+### Request URL
+
 ```text
 GET /covid/main
 ```
+
+### Request Parameter
+
+| parameter | requirement | description |
+| :-------: | :---------: | ----------- |
+|    lat    |      N      | 위도        |
+|    lon    |      N      | 경도        |
+
+```
+GET /covid/main?lat=37.47161263526149&lon=126.71495060184574
+```
+
+\* lat 또는 lon 둘 중 하나라도 값이 없는 경우에는, 서울 지역의 값을 보여줍니다.
 
 ## 2\) RESPONSE BODY
 
