@@ -49,13 +49,13 @@ GET /covid/main?lat=37.47161263526149&lon=126.71495060184574
 
 ```json
 {
-	"location": "계양구 병방동",
-	"coronic_total": 567,
-	"coronic_region": 334,
-	"comp_total": 128,
-	"comp_region": 8,
-	"is_inc_total": 1,
-	"is_inc_region": -1
+  "location": "인천",
+  "coronicTotal": 1316,
+  "coronicRegion": 82,
+  "compTotal": 41,
+  "compRegion": 18,
+  "isIncTotal": -1,
+  "isIncRegion": -1
 }
 ```
 
