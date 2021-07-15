@@ -6,9 +6,18 @@ description: 시간대별 미세먼지 및 초미세먼지 농도를 알려주�
 
 ## 1\) URL
 
+### Request URL
+
 ```text
 GET /microdust/time
 ```
+
+### Request Parameter
+
+| parameter | requirement | description |
+| :---: | :---: | :--- |
+| lat | N | 위도 |
+| lon | N | 경도 |
 
 ## 2\) RESPONSE BODY
 
