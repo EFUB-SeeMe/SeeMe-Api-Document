@@ -4,9 +4,9 @@ description: 시간대별 기온을 제공하는 API
 
 # 시간대별 기온 페이지
 
-## 1) URL
+## 1\) URL
 
-```
+```text
 GET /weather/temp
 ```
 
@@ -24,7 +24,7 @@ GET /weather/temp
 | :---: | :---: | :--- |
 | time | string | 시간 |
 | temperature | string | 온도 |
-|    icon     | string | 아이콘 URL  |
+| icon | string | 아이콘 URL |
 
 ### Example
 

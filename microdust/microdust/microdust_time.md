@@ -23,8 +23,8 @@ HTTP Status code : `200 OK`
 | name | type | description |
 | :--- | :--- | :--- |
 | time | string | 시간 표시\(24시간제\) |
-| dust | int | 시간별 미세먼지 농도 |
-| microdust | int | 시간별 초미세먼지 농도 |
+| pm10 | int | 시간별 미세먼지 농도 |
+| pm25 | int | 시간별 초미세먼지 농도 |
 
 ### Example
 

@@ -15,11 +15,11 @@ GET /covid/main
 ### Request Parameter
 
 | parameter | requirement | description |
-| :-------: | :---------: | ----------- |
-|    lat    |      N      | 위도        |
-|    lon    |      N      | 경도        |
+| :---: | :---: | :--- |
+| lat | N | 위도 |
+| lon | N | 경도 |
 
-```
+```text
 GET /covid/main?lat=37.47161263526149&lon=126.71495060184574
 ```
 
@@ -39,7 +39,7 @@ HTTP Status code: `200 OK`
 | :--- | :--- | :--- |
 | address | string | 위치 |
 | grade | string | 현재 미세먼지 등급 |
-| gradeIcon | string | 아이콘 이미지 URL    |
+| gradeIcon | string | 아이콘 이미지 URL |
 | pm10 | int | 현재 미세먼지 농도 |
 | pm25 | int | 현재 초미세먼지 농도 |
 | desc | string | 설명 |

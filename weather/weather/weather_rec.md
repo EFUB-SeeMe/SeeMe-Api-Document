@@ -1,5 +1,5 @@
 ---
-description: 날씨에 따른 옷을 추천해주는 api, 미완성-고민 중!
+description: '날씨에 따른 옷을 추천해주는 api, 미완성-고민 중!'
 ---
 
 # OOTD 추천 페이지
@@ -37,11 +37,9 @@ HTTP Status code: `200 OK`
 
 ### Example
 
-```
+```text
 업데이트 예정
 ```
-
-
 
 ## 3\) ERROR CODE
 
