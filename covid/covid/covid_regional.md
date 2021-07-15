@@ -6,9 +6,38 @@ description: 지역 확진자 수 추이를 알려주는 api
 
 ## 1\) URL
 
+### Request URL
+
 ```text
 GET /covid/regional
 ```
+
+### Request Parameter 1
+
+| parameter | requirement | description |
+| :-------: | :---------: | ----------- |
+|    lat    |      N      | 위도        |
+|    lon    |      N      | 경도        |
+
+```
+GET /covid/regional?lat=37.47161263526149&lon=126.71495060184574
+```
+
+\* lat 또는 lon 둘 중 하나라도 값이 없는 경우에는, 서울 지역의 값을 보여줍니다.
+
+### Request Parameter 2
+
+| parameter | requirement | description | available value                                              |
+| :-------: | :---------: | ----------- | ------------------------------------------------------------ |
+| location  |      N      | 지역 이름   | 서울, 인천, 경기, 제주, 경남, 경북, 전남, 전북, 충남, 충북, 강원, 세종, 울산, 대전, 광주, 대구, 부산 |
+
+```
+GET /covid/regional?location=서울
+```
+
+\* 검색 시 해당 파라미터를 이용하여 호출할 수 있습니다.
+
+\* "줄임말이 아닌 인천광역시, 세종특별자치시 와 같은 본래의 이름으로 호출하고 싶다" 등 의견 주시면 반영하겠습니다 !
 
 ## 2\) RESPONSE BODY
 
