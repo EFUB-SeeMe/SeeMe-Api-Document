@@ -6,15 +6,30 @@ description: "미세먼지 페이지 관련 API입니다\U0001F60A"
 
 ## 1\) URL
 
+### Request URL
+
 ```text
-GET /microdust/main
+GET /covid/main
 ```
+
+### Request Parameter
+
+| parameter | requirement | description |
+| :-------: | :---------: | ----------- |
+|    lat    |      N      | 위도        |
+|    lon    |      N      | 경도        |
+
+```
+GET /covid/main?lat=37.47161263526149&lon=126.71495060184574
+```
+
+\* lat 또는 lon 둘 중 하나라도 값이 없는 경우에는, ??의 값을 보여줍니다.
 
 ## 2\) RESPONSE BODY
 
 ### Success http status code
 
-HTTP Status code : `200 OK`
+HTTP Status code: `200 OK`
 
 ### Description
 
@@ -22,23 +37,23 @@ HTTP Status code : `200 OK`
 
 | name | type | description |
 | :--- | :--- | :--- |
-| location | string | 위치 |
-| icon | string | 아이콘 이미지 URL |
-| icon\_code | string | 현재 미세먼지 상태 |
-| dust | int | 현재 미세먼지 농도 |
-| microdust | int | 현재 초미세먼지 농도 |
+| address | string | 위치 |
+| grade | string | 현재 미세먼지 등급 |
+| gradeIcon | string | 아이콘 이미지 URL    |
+| pm10 | int | 현재 미세먼지 농도 |
+| pm25 | int | 현재 초미세먼지 농도 |
 | desc | string | 설명 |
 
 ### Example
 
 ```java
 {
-    "location": "계양구 병방동",
-    "icon": "https://user-images.githubusercontent.com/68107000/124224687-19f86b00-db41-11eb-9090-d2b32f38fa67.png",
-    "icon_code": "좋음", 
-    "dust": 23,
-    "microdust": 15,
-    "desc": "야외 활동을 즐겨보세요!",
+  "address": "계양구 병방동",
+  "grade": "좋음",
+  "gradeIcon": "좋음 icon URL",
+  "pm10": 15,
+  "pm25": 6,
+  "desc": "야외 활동을 즐겨보세요 !"
 }
 ```
 
