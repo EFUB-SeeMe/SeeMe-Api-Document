@@ -20,10 +20,10 @@ GET /covid/main
 | lon | N | 경도 |
 
 ```text
-GET /covid/main?lat=37.47161263526149&lon=126.71495060184574
+GET /covid/main?lat=37.5145963013281&lon=126.9754626313914
 ```
 
-\* lat 또는 lon 둘 중 하나라도 값이 없는 경우에는, ??의 값을 보여줍니다.
+\* lat 또는 lon 둘 중 하나라도 값이 없는 경우에는, *서울특별시 용산구 이촌동*의 값을 보여줍니다.
 
 ## 2\) RESPONSE BODY
 
@@ -38,7 +38,7 @@ HTTP Status code: `200 OK`
 | name | type | description |
 | :--- | :--- | :--- |
 | address | string | 위치 |
-| grade | string | 현재 미세먼지 등급 |
+| grade | int | 현재 미세먼지 등급<br />좋음, 보통, 나쁨, 매우나쁨 의 값을 나타냄 |
 | gradeIcon | string | 아이콘 이미지 URL |
 | pm10 | int | 현재 미세먼지 농도 |
 | pm25 | int | 현재 초미세먼지 농도 |
@@ -48,9 +48,9 @@ HTTP Status code: `200 OK`
 
 ```java
 {
-  "address": "계양구 병방동",
+  "address": "서울특별시 용산구 이촌동",
   "grade": "좋음",
-  "gradeIcon": "좋음 icon URL",
+  "gradeIcon": "https://seeme-icon.s3.ap-northeast-2.amazonaws.com/icon/microdust/microdust.png",
   "pm10": 15,
   "pm25": 6,
   "desc": "야외 활동을 즐겨보세요 !"
