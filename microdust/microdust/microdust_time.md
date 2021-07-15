@@ -34,6 +34,7 @@ HTTP Status code : `200 OK`
 | time | string | 시간 표시\(24시간제\) |
 | pm10 | int | 시간별 미세먼지 농도 |
 | pm25 | int | 시간별 초미세먼지 농도 |
+| grade | string | 미세먼지 등 |
 
 ### Example
 
