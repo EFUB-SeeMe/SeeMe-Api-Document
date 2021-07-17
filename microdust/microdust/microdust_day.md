@@ -33,10 +33,10 @@ HTTP Status code : `200 OK`
 ```java
 {
     {
-        "dust_am": 32,
-        "microdust_am": 35,
-        "dust_pm": 18,
-        "microdust_pm": 30,
+        "dustAm": 32,
+        "microdustAm": 35,
+        "dustPm": 18,
+        "microdustPm": 30,
         "date": "06.27" 
     }
 }
