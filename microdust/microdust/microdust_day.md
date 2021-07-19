@@ -22,10 +22,8 @@ HTTP Status code : `200 OK`
 
 | name | type | description |
 | :--- | :--- | :--- |
-| dust\_am | int | 오전 평균 미세먼지 농도 |
-| microdust\_am | int | 오전 평균 초미세먼지 농도 |
-| dust\_pm | int | 오후 평균 미세먼지 농도 |
-| microdust\_pm | int | 오후 평균 초미세먼지 농도 |
+| dust | int | 평균 미세먼지 농도 |
+| microdust | int | 평균 초미세먼지 농도 |
 | date | string | 날짜 |
 
 ### Example
@@ -33,11 +31,9 @@ HTTP Status code : `200 OK`
 ```java
 {
     {
-        "dustAm": 32,
-        "microdustAm": 35,
-        "dustPm": 18,
-        "microdustPm": 30,
-        "date": "06.27" 
+        "dust": 21,
+        "microdust": 20,
+        "date": "2021-07-18" 
     }
 }
 ```
