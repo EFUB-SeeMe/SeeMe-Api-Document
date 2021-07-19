@@ -52,12 +52,12 @@ GET /covid/main?location=서울
 | name | type | description |
 | :---: | :---: | :--- |
 | location | string | 현재 위치 |
-| coronic\_total | unsigned int | 전국 확진자 수 |
-| coronic\_region | unsigned int | 지역 확진자 수 |
-| comp\_total | unsigned int | 전국 확진자 수 전날 대비 변화량 |
-| comp\_region | unsigned int | 지역 확진자 수 전날 대비 변화량 |
-| is\_inc\_total | int | 전국, 전날 대비 증감 표현 -1: 감소, 0: 동일, 1: 증가 |
-| is\_inc\_region | int | 지역, 전날 대비 증감 표현 -1: 감소, 0: 동일, 1: 증가 |
+| coronicTotal | int | 전국 확진자 수 |
+| coronicRegion | int | 지역 확진자 수 |
+| compTotal | int | 전국 확진자 수 전날 대비 변화량 |
+| compRegion | int | 지역 확진자 수 전날 대비 변화량 |
+| isIncTotal | int | 전국, 전날 대비 증감 표현 -1: 감소, 0: 동일, 1: 증가 |
+| isIncRegion | int | 지역, 전날 대비 증감 표현 -1: 감소, 0: 동일, 1: 증가 |
 
 ### Example
 

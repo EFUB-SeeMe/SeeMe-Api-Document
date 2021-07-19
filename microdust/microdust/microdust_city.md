@@ -20,9 +20,9 @@ HTTP Status code : `200 OK`
 
 ![image](https://user-images.githubusercontent.com/68282057/124726872-1ef65980-df49-11eb-8139-976b5783d790.png)
 
-| name | type | description | etc |
+| name | type | description | 비고 |
 | :--- | :--- | :--- | ---- |
-| station_name | string | 측정소 이름 | 고유한 값 (유일한 값), 현재 총 600개 |
+| stationName | string | 측정소 이름 | 고유한 값 (유일한 값), 현재 총 600개 |
 | lat          | double | 위도                                   | 소수점 최대 7자리 |
 | lon          | double | 경도                                        | 소수점 최대 7자리 |
 | pm10         | string | 미세먼지 농도                           | 측정 이상의 경우, "-"<br />측정 이상이 아주 드묾 |
