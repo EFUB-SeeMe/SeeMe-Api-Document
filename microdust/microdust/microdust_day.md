@@ -6,9 +6,24 @@ description: '요일별 오전, 오후 미세먼지 및 초미세먼지 농도�
 
 ## 1\) URL
 
+### Request URL
+
 ```text
 GET /microdust/day
 ```
+
+### Request Parameter
+
+| parameter | requirement | description |
+| :-------: | :---------: | :---------- |
+|    lat    |      N      | 위도        |
+|    lon    |      N      | 경도        |
+
+```text
+GET /microdust/day/geo=37.5145963013281;126.9754626313914
+```
+
+\* lat 또는 lon 둘 중 하나라도 값이 없는 경우에는, *서울특별시 서대문구 이화여자대학교*의 값을 보여줍니다.
 
 ## 2\) RESPONSE BODY
 
