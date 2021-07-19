@@ -23,7 +23,7 @@ GET /microdust/main
 GET /microdust/main?lat=37.5145963013281&lon=126.9754626313914
 ```
 
-\* lat 또는 lon 둘 중 하나라도 값이 없는 경우에는, *서울특별시 용산구 이촌동*의 값을 보여줍니다.
+\* lat 또는 lon 둘 중 하나라도 값이 없는 경우에는, _서울특별시 용산구 이촌동_의 값을 보여줍니다.
 
 ## 2\) RESPONSE BODY
 
@@ -38,7 +38,7 @@ HTTP Status code: `200 OK`
 | name | type | description |
 | :--- | :--- | :--- |
 | address | string | 위치 |
-| grade | int | 현재 미세먼지 등급<br />좋음, 보통, 나쁨, 매우나쁨 의 값을 나타냄 |
+| grade | int | 현재 미세먼지 등급 좋음, 보통, 나쁨, 매우나쁨 의 값을 나타냄 |
 | gradeIcon | string | 아이콘 이미지 URL |
 | pm10 | int | 현재 미세먼지 농도 |
 | pm25 | int | 현재 초미세먼지 농도 |

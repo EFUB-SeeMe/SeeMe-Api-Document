@@ -23,7 +23,7 @@ GET /microdust/time
 GET /microdust/time?location=37.5145963013281,126.9754626313914
 ```
 
-\* lat 또는 lon 둘 중 하나라도 값이 없는 경우에는, *서울특별시 서대문구 대현동*의 값을 보여줍니다.
+\* lat 또는 lon 둘 중 하나라도 값이 없는 경우에는, _서울특별시 서대문구 대현동_의 값을 보여줍니다.
 
 ## 2\) RESPONSE BODY
 
@@ -40,7 +40,6 @@ HTTP Status code : `200 OK`
 | time | string | 시간 표시\(24시간제\) |
 | pm10 | int | 시간별 미세먼지 농도 |
 | pm25 | int | 시간별 초미세먼지 농도 |
-| grade | string | 미세먼지 등 |
 
 ### Example
 
