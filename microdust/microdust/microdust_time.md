@@ -19,6 +19,12 @@ GET /microdust/time
 | lat | N | 위도 |
 | lon | N | 경도 |
 
+```text
+GET /microdust/time?location=37.5145963013281,126.9754626313914
+```
+
+\* lat 또는 lon 둘 중 하나라도 값이 없는 경우에는, *서울특별시 서대문구 대현동*의 값을 보여줍니다.
+
 ## 2\) RESPONSE BODY
 
 ### Success http status code

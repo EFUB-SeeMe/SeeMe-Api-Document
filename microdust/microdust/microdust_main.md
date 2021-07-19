@@ -9,7 +9,7 @@ description: "미세먼지 페이지 관련 API입니다\U0001F60A"
 ### Request URL
 
 ```text
-GET /covid/main
+GET /microdust/main
 ```
 
 ### Request Parameter
@@ -20,7 +20,7 @@ GET /covid/main
 | lon | N | 경도 |
 
 ```text
-GET /covid/main?lat=37.5145963013281&lon=126.9754626313914
+GET /microdust/main?lat=37.5145963013281&lon=126.9754626313914
 ```
 
 \* lat 또는 lon 둘 중 하나라도 값이 없는 경우에는, *서울특별시 용산구 이촌동*의 값을 보여줍니다.

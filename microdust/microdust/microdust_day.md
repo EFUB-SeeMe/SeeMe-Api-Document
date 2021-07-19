@@ -6,9 +6,24 @@ description: '요일별 오전, 오후 미세먼지 및 초미세먼지 농도�
 
 ## 1\) URL
 
+### Request URL
+
 ```text
 GET /microdust/day
 ```
+
+### Request Parameter
+
+| parameter | requirement | description |
+| :-------: | :---------: | :---------- |
+|    lat    |      N      | 위도        |
+|    lon    |      N      | 경도        |
+
+```text
+GET /microdust/day/geo=37.5145963013281;126.9754626313914
+```
+
+\* lat 또는 lon 둘 중 하나라도 값이 없는 경우에는, *서울특별시 서대문구 대현동*의 값을 보여줍니다.
 
 ## 2\) RESPONSE BODY
 
@@ -22,23 +37,39 @@ HTTP Status code : `200 OK`
 
 | name | type | description |
 | :--- | :--- | :--- |
-| dust\_am | int | 오전 평균 미세먼지 농도 |
-| microdust\_am | int | 오전 평균 초미세먼지 농도 |
-| dust\_pm | int | 오후 평균 미세먼지 농도 |
-| microdust\_pm | int | 오후 평균 초미세먼지 농도 |
+| dust | int | 평균 미세먼지 농도 |
+| microdust | int | 평균 초미세먼지 농도 |
 | date | string | 날짜 |
 
 ### Example
 
 ```java
 {
-    {
-        "dustAm": 32,
-        "microdustAm": 35,
-        "dustPm": 18,
-        "microdustPm": 30,
-        "date": "06.27" 
-    }
+  {
+    "dust": 19,
+    "microdust": 19,
+    "date": "07.18"
+  },
+  {
+    "dust": 21,
+    "microdust": 20,
+    "date": "07.19"
+  },
+  {
+    "dust": 28,
+    "microdust": 26,
+    "date": "07.20"
+  },
+  {
+    "dust": 22,
+    "microdust": 21,
+    "date": "07.21"
+  },
+  {
+    "dust": 21,
+    "microdust": 20,
+    "date": "07.22"
+  }
 }
 ```
 
