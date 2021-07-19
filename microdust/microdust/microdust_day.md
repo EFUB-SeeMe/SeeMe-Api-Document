@@ -30,11 +30,31 @@ HTTP Status code : `200 OK`
 
 ```java
 {
-    {
-        "dust": 21,
-        "microdust": 20,
-        "date": "2021-07-18" 
-    }
+  {
+    "dust": 19,
+    "microdust": 19,
+    "date": "07.18"
+  },
+  {
+    "dust": 21,
+    "microdust": 20,
+    "date": "07.19"
+  },
+  {
+    "dust": 28,
+    "microdust": 26,
+    "date": "07.20"
+  },
+  {
+    "dust": 22,
+    "microdust": 21,
+    "date": "07.21"
+  },
+  {
+    "dust": 21,
+    "microdust": 20,
+    "date": "07.22"
+  }
 }
 ```
 
