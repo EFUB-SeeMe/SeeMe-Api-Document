@@ -15,10 +15,8 @@
 
 * [미세먼지](microdust/microdust/README.md)
   * [메인 페이지](microdust/microdust/microdust_main.md)
-  * [시간대별 추이 페이지](microdust/microdust/microdust_time.md)
   * [요일별 추이 페이지](microdust/microdust/microdust_day.md)
   * [환기시간 및 마스크 추천 페이지](microdust/microdust/microdust_rec.md)
-  * [도시별 농도 페이지](microdust/microdust/microdust_city.md)
 
 ## covid
 

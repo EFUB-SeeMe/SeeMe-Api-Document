@@ -33,33 +33,179 @@ HTTP Status code: `200 OK`
 
 ### Description
 
-![image](https://user-images.githubusercontent.com/68282057/124726729-fa01e680-df48-11eb-86e2-258ff2d4633b.png)
+![main](https://user-images.githubusercontent.com/68282057/124726729-fa01e680-df48-11eb-86e2-258ff2d4633b.png)
+
+![rec](../../.gitbook/assets/.png.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">name</th>
+      <th style="text-align:left">type</th>
+      <th style="text-align:left">description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">resultCode</td>
+      <td style="text-align:left">int</td>
+      <td style="text-align:left">&#xACB0;&#xACFC; &#xCF54;&#xB4DC;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">errorMessage</td>
+      <td style="text-align:left">string</td>
+      <td style="text-align:left">
+        <p>&#xC5D0;&#xB7EC; &#xBC1C;&#xC0DD; &#xC6D0;&#xC778;</p>
+        <p>&#xC5D0;&#xB7EC;&#xAC00; &#xBC1C;&#xC0DD;&#xD558;&#xC9C0; &#xC54A;&#xC558;&#xB2E4;&#xBA74;
+          &#xBE48; &#xBB38;&#xC790;&#xC5F4; &#xBC18;&#xD658;</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">response</td>
+      <td style="text-align:left">string</td>
+      <td style="text-align:left">&#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">document</td>
+      <td style="text-align:left">object</td>
+      <td style="text-align:left">
+        <p>&#xAC01; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xC758; Response Dto</p>
+        <p>&#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xBCC4; &#xBC18;&#xD658;&#xAC12;</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+\* resultCode : 값이 잘 호출이 되었는지를 알려주는 코드입니다. 
+
+* 200: 에러 없이 값이 잘 호출되었음
+* 500: API 제공사의 문제로 값이 호출되지 않았음
+
+\* document : 밑의 각 컴포넌트별 document 참고
+
+### **main document**
 
 | name | type | description |
 | :--- | :--- | :--- |
-| address | string | 위치 |
+| address | string | 주소 |
 | grade | int | 현재 미세먼지 등급 좋음, 보통, 나쁨, 매우나쁨 의 값을 나타냄 |
 | gradeIcon | string | 아이콘 이미지 URL |
 | pm10 | int | 현재 미세먼지 농도 |
 | pm25 | int | 현재 초미세먼지 농도 |
 | desc | string | 설명 |
 
+### other document
+
+| name | type | description |
+| :--- | :--- | :--- |
+| so2Value | int | 아황산가스  |
+| coValue | int | 일산화탄소  |
+| o3Value | int | 오존  |
+| no2Value | int | 이산화질소 농도 |
+| pm10 | int | 미세먼지 농도 |
+
+### rec document
+
+| name | type | description |
+| :--- | :--- | :--- |
+| maskIcon | string | 마스크 아이콘 URL  |
+| desc | string | 마스크 추천  |
+| CAI | float | 통합대기환경지수 |
+| CAIFlag | boolean |  |
+
 ### Example
 
 ```java
 {
-  "address": "서울특별시 용산구 이촌동",
-  "grade": "좋음",
-  "gradeIcon": "https://seeme-icon.s3.ap-northeast-2.amazonaws.com/icon/microdust/microdust.png",
-  "pm10": 15,
-  "pm25": 6,
-  "desc": "야외 활동을 즐겨보세요 !"
+	[
+		{
+				"resultCode": 200
+				"errorMessage": ""
+				"response": "main"
+				"document": 
+				{
+						"address": "서울특별시 용산구 이촌동",
+						"grade": "좋음",
+						"gradeIcon": "https://seeme-icon.s3.ap-northeast-2.amazonaws.com/icon/microdust/microdust.png",
+						"pm10": 15,
+						"pm25": 6,
+						"desc": "야외 활동을 즐겨보세요 !"
+				}
+		},
+		{
+				"resultCode": 200
+				"errorMessage": ""
+				"response": "other"
+				"document": 
+				{
+						"so2Value": 10,
+						"coValue": 20,
+						"o3Value": 15,
+						"no2Value": 32
+				}
+		},
+		{
+				"resultCode": 200
+				"errorMessage": ""
+				"response": "rec"
+				"document": 
+				{
+						"maskIcon": "https://seeme-icon.s3.ap-northeast-2.amazonaws.com/icon/mask/dental.png",
+						"desc"‘: "미세먼지 좋아요~ 덴탈마스크 추천!"
+						"CAI": 49.32113,
+						"CAIFlag": true
+				}
+		}
+	]
 }
+
 ```
 
 ## 3\) ERROR CODE
 
 | error code | error message | description |
 | :--- | :--- | :--- |
-| 500 | INTERNAL\_SERVER\_ERROR | 서버 내부 에러 |
+| 500 | INTERNAL\_SERVER\_ERROR | API 제공사의 문제 |
+
+### Example
+
+```java
+{
+	[
+		{
+				"resultCode": 500
+				"errorMessage": "api 제공사의 문제"
+				"response": "main"
+				"document": null
+		},
+		{
+				"resultCode": 200
+				"errorMessage": ""
+				"response": "rec"
+				"document": 
+				{
+						"so2Value": 10,
+						"coValue": 20,
+						"o3Value": 15,
+						"no2Value": 32
+				}
+		},
+		{
+				"resultCode": 200
+				"errorMessage": ""
+				"response": "rec"
+				"document": 
+				{
+						"maskIcon": "https://seeme-icon.s3.ap-northeast-2.amazonaws.com/icon/mask/dental.png",
+						"desc"‘: "미세먼지 좋아요~ 덴탈마스크 추천!"
+						"CAI": 49.32113,
+						"CAIFlag": true
+				}
+		}
+	]
+}
+
+```
+
+\* resultCode가 500인 경우: API 제공사의 문제로 값을 불러올 수 없음 → document 값이 null
 
