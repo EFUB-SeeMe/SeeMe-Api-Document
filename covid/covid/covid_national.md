@@ -6,6 +6,8 @@ description: 전국 확진자 추이를 알려주는 api
 
 ## 1\) URL
 
+### Request URL
+
 ```text
 GET /covid/national
 ```

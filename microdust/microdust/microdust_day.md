@@ -36,7 +36,7 @@ HTTP Status code : `200 OK`
 ![image](https://user-images.githubusercontent.com/68282057/124726655-e787ad00-df48-11eb-99f2-95855c82d781.png)
 
 | name | type | description |
-| :--- | :--- | :--- |
+| :---: | :---: | :---: |
 | dust | int | 평균 미세먼지 농도 |
 | microdust | int | 평균 초미세먼지 농도 |
 | date | string | 날짜 |
@@ -76,6 +76,6 @@ HTTP Status code : `200 OK`
 ## 3\) ERROR CODE
 
 | error code | error message | description |
-| :--- | :--- | :--- |
+| :---: | :---: | :---: |
 | 500 | INTERNAL\_SERVER\_ERROR | 서버 내부 에러 |
 

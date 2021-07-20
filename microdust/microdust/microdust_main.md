@@ -40,35 +40,35 @@ HTTP Status code: `200 OK`
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">name</th>
-      <th style="text-align:left">type</th>
-      <th style="text-align:left">description</th>
+      <th style="text-align:center">name</th>
+      <th style="text-align:center">type</th>
+      <th style="text-align:center">description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">resultCode</td>
-      <td style="text-align:left">int</td>
-      <td style="text-align:left">&#xACB0;&#xACFC; &#xCF54;&#xB4DC;</td>
+      <td style="text-align:center">resultCode</td>
+      <td style="text-align:center">int</td>
+      <td style="text-align:center">&#xACB0;&#xACFC; &#xCF54;&#xB4DC;</td>
     </tr>
     <tr>
-      <td style="text-align:left">errorMessage</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">
+      <td style="text-align:center">errorMessage</td>
+      <td style="text-align:center">string</td>
+      <td style="text-align:center">
         <p>&#xC5D0;&#xB7EC; &#xBC1C;&#xC0DD; &#xC6D0;&#xC778;</p>
         <p>&#xC5D0;&#xB7EC;&#xAC00; &#xBC1C;&#xC0DD;&#xD558;&#xC9C0; &#xC54A;&#xC558;&#xB2E4;&#xBA74;
           &#xBE48; &#xBB38;&#xC790;&#xC5F4; &#xBC18;&#xD658;</p>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">response</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;</td>
+      <td style="text-align:center">response</td>
+      <td style="text-align:center">string</td>
+      <td style="text-align:center">&#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;</td>
     </tr>
     <tr>
-      <td style="text-align:left">document</td>
-      <td style="text-align:left">object</td>
-      <td style="text-align:left">
+      <td style="text-align:center">document</td>
+      <td style="text-align:center">object</td>
+      <td style="text-align:center">
         <p>&#xAC01; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xC758; Response Dto</p>
         <p>&#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xBCC4; &#xBC18;&#xD658;&#xAC12;</p>
       </td>
@@ -86,7 +86,7 @@ HTTP Status code: `200 OK`
 ### **main document**
 
 | name | type | description |
-| :--- | :--- | :--- |
+| :---: | :---: | :---: |
 | address | string | 주소 |
 | grade | int | 현재 미세먼지 등급 좋음, 보통, 나쁨, 매우나쁨 의 값을 나타냄 |
 | gradeIcon | string | 아이콘 이미지 URL |
@@ -97,7 +97,7 @@ HTTP Status code: `200 OK`
 ### other document
 
 | name | type | description |
-| :--- | :--- | :--- |
+| :---: | :---: | :---: |
 | so2Value | int | 아황산가스  |
 | coValue | int | 일산화탄소  |
 | o3Value | int | 오존  |
@@ -107,7 +107,7 @@ HTTP Status code: `200 OK`
 ### rec document
 
 | name | type | description |
-| :--- | :--- | :--- |
+| :---: | :---: | :---: |
 | maskIcon | string | 마스크 아이콘 URL  |
 | desc | string | 마스크 추천  |
 | CAI | float | 통합대기환경지수 |
@@ -166,7 +166,7 @@ HTTP Status code: `200 OK`
 ## 3\) ERROR CODE
 
 | error code | error message | description |
-| :--- | :--- | :--- |
+| :---: | :---: | :---: |
 | 500 | API\_PROVISION\_ERROR | API 제공사의 문제 |
 
 ### Example

@@ -16,7 +16,6 @@
 * [미세먼지](microdust/microdust/README.md)
   * [메인 페이지](microdust/microdust/microdust_main.md)
   * [요일별 추이 페이지](microdust/microdust/microdust_day.md)
-  * [환기시간 및 마스크 추천 페이지](microdust/microdust/microdust_rec.md)
 
 ## covid
 
@@ -24,4 +23,10 @@
   * [메인 페이지](covid/covid/covid_main.md)
   * [전국 확진자 추이 페이지](covid/covid/covid_national.md)
   * [지역 확진자 추이 페이지](covid/covid/covid_regional.md)
+
+## LOCATION
+
+* [위치변환](location/undefined/README.md)
+  * [읍면동→행정구역코드](location/undefined/undefined.md)
+  * [위경도→주소](location/undefined/undefined-2.md)
 
