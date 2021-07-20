@@ -26,7 +26,7 @@
 
 ## LOCATION
 
-* [위치변환](location/undefined/README.md)
-  * [읍면동→행정구역코드](location/undefined/undefined.md)
-  * [위경도→주소](location/undefined/undefined-2.md)
+* [위치변환](location/location/README.md)
+  * [읍면동→행정구역코드](location/location/undefined.md)
+  * [위경도→주소](location/location/undefined-2.md)
 
