@@ -161,11 +161,13 @@ HTTP Status code: `200 OK`
 
 ```
 
+\* resultCode가 200 → 에러 없이 값이 잘 호출 되었음 → errorMessage가 빈 문자열로 반환되고, document에 각 컴포넌트별 반환값이 저장됨
+
 ## 3\) ERROR CODE
 
 | error code | error message | description |
 | :--- | :--- | :--- |
-| 500 | INTERNAL\_SERVER\_ERROR | API 제공사의 문제 |
+| 500 | API\_PROVISION\_ERROR | API 제공사의 문제 |
 
 ### Example
 
@@ -207,5 +209,5 @@ HTTP Status code: `200 OK`
 
 ```
 
-\* resultCode가 500인 경우: API 제공사의 문제로 값을 불러올 수 없음 → document 값이 null
+\* resultCode가 500인 경우: API 제공사의 문제로 값을 불러올 수 없음 → errorMessage 에러 설명이으로 반환되고, document 값이 null
 
