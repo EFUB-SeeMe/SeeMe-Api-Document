@@ -20,7 +20,7 @@ GET /microdust/day
 | lon | N | 경도 |
 
 ```text
-GET /microdust/day/geo=37.5145963013281;126.9754626313914
+GET /microdust/day/lat=37.5145963013281&lon=126.9754626313914
 ```
 
 \* lat 또는 lon 둘 중 하나라도 값이 없는 경우에는, _서울특별시 서대문구 대현동_의 값을 보여줍니다.
