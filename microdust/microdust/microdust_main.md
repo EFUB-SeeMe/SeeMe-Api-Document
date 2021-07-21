@@ -104,12 +104,12 @@ HTTP Status code: `200 OK`
 | coFlag | boolean | 일산화탄소 농도 값 유무 |
 | o3Flag | boolean | 오존 농도 값 유무 |
 | no2Flag | boolean | 이산화질소 농도 값 유무 |
+| pm10 | int | 미세먼지 농도 |
+| pm25 | int | 초미세먼지 농도 |
 | so2 | int | 아황산가스 농도 |
 | co | int | 일산화탄소 농도 |
 | o3 | int | 오존 농도 |
 | no2 | int | 이산화질소 농도 |
-| pm10 | int | 미세먼지 농도 |
-| pm25 | int | 초미세먼지 농도 |
 
 ### rec document
 
@@ -149,10 +149,18 @@ HTTP Status code: `200 OK`
 				"response": "other"
 				"document": 
 				{
-						"so2Value": 10,
-						"coValue": 20,
-						"o3Value": 15,
-						"no2Value": 32
+						"pm10Flag": true,
+						"pm25Flag": true,
+						"so2Flag": true,
+						"coFlag": true,
+						"o3Flag": true,
+						"no2Flag": true,
+						"pm10": 15,
+						"pm25": 6,
+						"so2": 10,
+						"co": 20,
+						"o3": 15,
+						"no2": 32
 				}
 		},
 		{
