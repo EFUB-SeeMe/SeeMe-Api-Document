@@ -9,16 +9,14 @@ description: 읍면동 주소를 행정구역코드로 변환하여 서비스를
 ### Request URL
 
 ```text
-http://localhost:8080/location/search?umd={읍면동}
+http://localhost:8080/location/search
 ```
 
 ### Request Parameter
 
 | parameter | requirement | description |
 | :---: | :---: | :---: |
-| umd | Y | 읍면동 이름 |
-
-\* 읍면동 이름은 필수로 입력받아야 합니다. 
+| umd | Y\(필수\) | 읍면동 이름 |
 
 ```yaml
 http://localhost:8080/location/search?umd=남산동
@@ -68,7 +66,11 @@ http://localhost:8080/location/search?umd=남산동
     }
   ]
 }
+```
 
+\* 검색 결과가 없는 경우: totalCount 값이 0, addressList 요소 없는 상태로 반환
+
+```yaml
 {
   "totalCount": 0,
   "addressList": [
@@ -76,8 +78,6 @@ http://localhost:8080/location/search?umd=남산동
   ]
 }
 ```
-
-\* 검색 결과가 없는 경우: totalCount 값이 0, addressList 요소 없는 상태로 반환
 
 ## 3\) ERROR CODE
 

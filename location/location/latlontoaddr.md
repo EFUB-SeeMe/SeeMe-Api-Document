@@ -9,17 +9,15 @@ description: 위도와 경도를 입력받아 읍면동까지의 주소로 반�
 ### Request URL
 
 ```text
-http://localhost:8080/location/latLonToUmd?lat={위도}&lon={경도}
+http://localhost:8080/location/latLonToUmd
 ```
 
 ### Request Parameter
 
 | parameter | requirement | description |
 | :---: | :---: | :---: |
-| lat | Y | 위도 |
-| lon | Y | 경도 |
-
-\* 위도, 경도는 필수로 입력받아야 합니다. 
+| lat | Y\(필수\) | 위도 |
+| lon | Y\(필수\) | 경도  |
 
 ```text
 http://localhost:8080/location/latLonToUmd?lat=37.12335&lon=127.23412

@@ -12,7 +12,7 @@ description: "미세먼지 페이지 관련 API입니다\U0001F60A"
 GET /microdust/main
 ```
 
-### Request Parameter
+### Request Parameter1
 
 | parameter | requirement | description |
 | :---: | :---: | :--- |
@@ -25,6 +25,18 @@ GET /microdust/main?lat=37.5145963013281&lon=126.9754626313914
 
 \* lat 또는 lon 둘 중 하나라도 값이 없는 경우에는, _서울특별시 용산구 이촌동_의 값을 보여줍니다.
 
+### Request Parameter 2
+
+| parameter | requirement | description |
+| :---: | :---: | :--- |
+| code | N | 행정동코 |
+
+```text
+GET /microdust/main?code=2824510700
+```
+
+\* 검색 시 해당 파라미터를 이용하여 호출할 수 있습니다.
+
 ## 2\) RESPONSE BODY
 
 ### Success http status code
@@ -33,9 +45,9 @@ HTTP Status code: `200 OK`
 
 ### Description
 
-![main](https://user-images.githubusercontent.com/68282057/124726729-fa01e680-df48-11eb-86e2-258ff2d4633b.png)
+![main](../../.gitbook/assets/.png%20%281%29.png)
 
-![rec](../../.gitbook/assets/.png.png)
+![rec](../../.gitbook/assets/.png%20%282%29.png)
 
 <table>
   <thead>
