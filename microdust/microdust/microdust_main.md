@@ -97,11 +97,17 @@ HTTP Status code: `200 OK`
 ### other document
 
 | name | type | description |
-| :---: | :---: | :---: |
-| so2Value | int | 아황산가스 농 |
-| coValue | int | 일산화탄소 농 |
-| o3Value | int | 오존 농도 |
-| no2Value | int | 이산화질소 농도 |
+| :---: | :---: | :--- |
+| pm10Flag | boolean | 미세먼지 농도 값 유무 |
+| pm25Flag | boolean | 초미세먼지 농도 값 유무 |
+| so2Flag | boolean | 아황산가스 농도 값 유무 |
+| coFlag | boolean | 일산화탄소 농도 값 유무 |
+| o3Flag | boolean | 오존 농도 값 유무 |
+| no2Flag | boolean | 이산화질소 농도 값 유무 |
+| so2 | int | 아황산가스 농도 |
+| co | int | 일산화탄소 농도 |
+| o3 | int | 오존 농도 |
+| no2 | int | 이산화질소 농도 |
 | pm10 | int | 미세먼지 농도 |
 
 ### rec document
@@ -111,7 +117,11 @@ HTTP Status code: `200 OK`
 | maskIcon | string | 마스크 아이콘 URL  |
 | desc | string | 마스크 추천  |
 | CAI | float | 통합대기환경지수 |
-| CAIFlag | boolean |  |
+| CAIFlag | boolean | 통합대기환경지수 값 유무 |
+
+\* CAI\(통합대기환경지수\): 미세먼지\(PM10\), 초미세먼지\(PM2.5\), 이산화질소\(NO2\), 오존\(O3\) 이 모두 입력될 경우에만 CAI 산정이 가능합니다.
+
+→ 미세먼지, 초미세먼지, 이산화질소, 오존 중 하나 이상의 값이 입력되지 않는다면 CAIFlag는 False를 반환
 
 ### Example
 
