@@ -98,9 +98,9 @@ HTTP Status code: `200 OK`
 
 | name | type | description |
 | :---: | :---: | :---: |
-| so2Value | int | 아황산가스  |
-| coValue | int | 일산화탄소  |
-| o3Value | int | 오존  |
+| so2Value | int | 아황산가스 농 |
+| coValue | int | 일산화탄소 농 |
+| o3Value | int | 오존 농도 |
 | no2Value | int | 이산화질소 농도 |
 | pm10 | int | 미세먼지 농도 |
 
