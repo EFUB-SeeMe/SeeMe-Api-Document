@@ -87,9 +87,10 @@ HTTP Status code: `200 OK`
 
 | name | type | description |
 | :---: | :---: | :---: |
-| address | string | 주소 |
 | grade | int | 현재 미세먼지 등급 좋음, 보통, 나쁨, 매우나쁨 의 값을 나타냄 |
 | gradeIcon | string | 아이콘 이미지 URL |
+| pm10Flag | boolean | 미세먼지 농도 값 유무 |
+| pm25Flag | boolean | 초미세먼지 농도 값 유무 |
 | pm10 | int | 현재 미세먼지 농도 |
 | pm25 | int | 현재 초미세먼지 농도 |
 | desc | string | 설명 |
