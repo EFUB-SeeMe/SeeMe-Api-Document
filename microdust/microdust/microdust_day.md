@@ -12,7 +12,7 @@ description: '요일별 오전, 오후 미세먼지 및 초미세먼지 농도�
 GET /microdust/day
 ```
 
-### Request Parameter
+### Request Parameter1
 
 | parameter | requirement | description |
 | :---: | :---: | :--- |
@@ -25,15 +25,27 @@ GET /microdust/day/geo=37.5145963013281;126.9754626313914
 
 \* lat 또는 lon 둘 중 하나라도 값이 없는 경우에는, _서울특별시 서대문구 대현동_의 값을 보여줍니다.
 
+### Request Parameter 2
+
+| parameter | requirement | description |
+| :---: | :---: | :--- |
+| code | N | 행정동코드 |
+
+```text
+GET /microdust/day?code=2824510700
+```
+
+\* 검색 시 해당 파라미터를 이용하여 호출할 수 있습니다.
+
 ## 2\) RESPONSE BODY
+
+![day](../../.gitbook/assets/.png%20%283%29.png)
 
 ### Success http status code
 
 HTTP Status code : `200 OK`
 
 ### Description
-
-![image](https://user-images.githubusercontent.com/68282057/124726655-e787ad00-df48-11eb-99f2-95855c82d781.png)
 
 | name | type | description |
 | :---: | :---: | :---: |
@@ -44,7 +56,7 @@ HTTP Status code : `200 OK`
 ### Example
 
 ```java
-{
+[
   {
     "dust": 19,
     "microdust": 19,
@@ -70,7 +82,7 @@ HTTP Status code : `200 OK`
     "microdust": 20,
     "date": "07.22"
   }
-}
+]
 ```
 
 ## 3\) ERROR CODE
