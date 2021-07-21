@@ -109,6 +109,7 @@ HTTP Status code: `200 OK`
 | o3 | int | 오존 농도 |
 | no2 | int | 이산화질소 농도 |
 | pm10 | int | 미세먼지 농도 |
+| pm25 | int | 초미세먼지 농도 |
 
 ### rec document
 
