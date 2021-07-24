@@ -20,31 +20,34 @@ GET /weather/main
 
 ![](https://user-images.githubusercontent.com/68107000/124440780-f427cc00-ddb5-11eb-859f-a3d9d53492eb.png)
 
-| name | type | description |
-| :---: | :---: | :--- |
-| location | string | 위치 |
-| icon | string | 아이콘 URL |
-| icon\_code | string | 아이콘 설명 |
-| curr\_temp | int | 현재 온도 |
-| sens\_temp | int | 체감 온도 |
-| max | int | 최고 온도 |
-| min | int | 최저 온도 |
-| desc | string | 오늘 날씨에 대한 설명 |
-| comp | string | 전날과의 비교 설명 |
+- resultCode: 응답 코드 (≠ status code, =서버가 자체적으로 만든 코드, 추후 error code에 정리)
+- errorMessage: 에러 메세지 (성공 시 SUCCESS 반환)
+- document
+  - document.icon:  아이콘 URL
+  - document.iconDesc: 아이콘 설명
+  - document.currTemp: 현재 온도
+  - document.feelTemp: 체감 온도
+  - document.max: 최고 온도
+  - document.min: 최저 온도
+  - document.desc: 오늘 날씨에 대한 설명
+  - document.comp: 전날과의 비교설명
 
 ### Example
 
 ```javascript
 {
-    "location": "계양구 병방동",
-    "icon": "https://user-images.githubusercontent.com/68107000/124224687-19f86b00-db41-11eb-9090-d2b32f38fa67.png",
-    "icon_code": "흐림",
-    "curr_temp": 26,
-    "sens_temp": 28,
-    "max": 29,
-    "min": 20,
-    "desc": "오늘은 오후 6시에 소나기가 내려요\n우르르 쾅 !",
-    "comp": "어제보다 2℃ 낮아요"
+    "resultCode": 200,
+    "errorMessage": "SUCCESS",
+    "document": {
+        "icon": "https://seeme-icon.s3.ap-northeast-2.amazonaws.com/icon/weather/Sun.png",
+        "iconDesc": "맑음",
+        "currTemp": 26,
+        "feelTemp": 28,
+        "max": 29,
+        "min": 20,
+        "desc": "오늘은 초복이에요! 기력을 보충해보는 건 어떨까요?",
+        "comp": "오늘은 어제와 비슷한 날씨가 예상됩니다."
+    }
 }
 ```
 
@@ -52,5 +55,6 @@ GET /weather/main
 
 | error code | error message | description |
 | :--- | :--- | :--- |
+|  | JSON_PARSING_ERROR      | api의 잘못된 응답으로 인한 json 문서 파싱 에러 |
 | 500 | INTERNAL\_SERVER\_ERROR | 서버 내부 에러 |
 

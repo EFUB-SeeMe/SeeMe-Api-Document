@@ -2,7 +2,7 @@
 description: 시간대별 기온을 제공하는 API
 ---
 
-# 시간대별 기온 페이지
+# 시간대별 기온 페이지 // 삭제
 
 ## 1\) URL
 
@@ -18,7 +18,7 @@ GET /weather/temp
 
 ### Description
 
-![](https://user-images.githubusercontent.com/68107000/124440085-31d82500-ddb5-11eb-9a1e-b9cc888a4380.png)
+
 
 | name | type | description |
 | :---: | :---: | :--- |
