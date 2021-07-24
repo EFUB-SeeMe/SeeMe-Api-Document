@@ -103,7 +103,7 @@ HTTP Status code: `200 OK`
 | pm25 | int | 현재 초미세먼지 농도 |
 | desc | string | 설명 |
 
-### other document
+### **total document**
 
 | name | type | description |
 | :---: | :---: | :--- |
@@ -120,7 +120,7 @@ HTTP Status code: `200 OK`
 | o3 | double | 오존 농도 |
 | no2 | double | 이산화질소 농도 |
 
-### rec document
+### **mask document**
 
 | name | type | description |
 | :---: | :---: | :---: |
@@ -137,50 +137,50 @@ HTTP Status code: `200 OK`
 
 ```java
 [
-    {
-        "resultCode": 200,
-        "errorMessage": null,
-        "response": "main",
-        "document": {
-            "grade": "좋음",
-            "gradeIcon": "https://seeme-icon.s3.ap-northeast-2.amazonaws.com/icon/microdust/microdust.png",
-            "pm10Flag": true,
-            "pm25Flag": true,
-            "pm10": 16,
-            "pm25": 14,
-            "desc": "야외 활동을 즐겨보세요 !"
-        }
-    },
-    {
-        "resultCode": 200,
-        "errorMessage": null,
-        "response": "other",
-        "document": {
-            "pm10Flag": true,
-            "pm25Flag": true,
-            "so2Flag": true,
-            "coFlag": true,
-            "o3Flag": true,
-            "no2Flag": true,
-            "pm10": 16,
-            "pm25": 14,
-            "so2": 10,
-            "co": 20,
-            "o3": 15,
-            "no2": 18
-        }
-    },
-    {
-        "resultCode": 200,
-        "errorMessage": null,
-        "response": "rec",
-        "document": {
-            "maskIcon": "https://seeme-icon.s3.ap-northeast-2.amazonaws.com/icon/mask/dental.png",
-            "desc": "미세먼지 좋아요~ 덴탈마스크 추천!",
-            "caiFlag": true,
-            "cai": 40.193423
-        }
-    }
+	{
+	  "mainInfo": {
+	    "resultCode": 200,
+	    "errorMessage": null,
+	    "document": {
+	      "grade": "1",
+	      "gradeIcon": "https://seeme-icon.s3.ap-northeast-2.amazonaws.com/icon/microdust/pm/good.png",
+	      "pm10Flag": true,
+	      "pm25Flag": true,
+	      "pm10": 22,
+	      "pm25": 15,
+	      "desc": "야외 활동을 즐겨보세요 !"
+	    }
+	  },
+	  "totalInfo": {
+	    "resultCode": 200,
+	    "errorMessage": null,
+	    "document": {
+	      "pm10Flag": true,
+	      "pm25Flag": true,
+	      "so2Flag": true,
+	      "coFlag": true,
+	      "o3Flag": true,
+	      "no2Flag": true,
+	      "caiFlag": true,
+	      "pm10": 22.0,
+	      "pm25": 15.0,
+	      "so2": 0.002,
+	      "co": 0.5,
+	      "o3": 0.07,
+	      "no2": 0.003,
+	      "cai": 83.0,
+	      "caiIcon": "https://seeme-icon.s3.ap-northeast-2.amazonaws.com/icon/microdust/cai/soso.png"
+	    }
+	  },
+	  "maskInfo": {
+	    "resultCode": 200,
+	    "errorMessage": null,
+	    "document": {
+	      "maskIcon": "https://seeme-icon.s3.ap-northeast-2.amazonaws.com/icon/mask/dental.png",
+	      "desc": "미세먼지 좋아요~ 덴탈마스크 추천!"
+	    }
+	  }
+	}
 ]
 ```
 
