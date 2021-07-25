@@ -2,7 +2,7 @@
 description: 시간대별 강수량을 알려주는 api
 ---
 
-# 시간대별 온도, 강수량, ootd 페이지
+# 시간대별 강수량 페이지
 
 ## 1\) URL
 
@@ -20,40 +20,40 @@ HTTP Status code: `200 OK`
 
 ![](https://user-images.githubusercontent.com/68107000/124440085-31d82500-ddb5-11eb-9a1e-b9cc888a4380.png)
 
-- tempInfo
-  - tempInfo.resultCode: 응답 코드
-  - tempInfo.errorMessage: 에러 메세지 (성공 시 SUCCESS 반환)
-  - tempInfo.document
-    - tempInfo.document.time:  시간
-    - tempInfo.document.temperature: 기온
-    - tempInfo.document.icon: 날씨 icon URL
+* tempInfo
+  * tempInfo.resultCode: 응답 코드
+  * tempInfo.errorMessage: 에러 메세지 \(성공 시 SUCCESS 반환\)
+  * tempInfo.document
+    * tempInfo.document.time:  시간
+    * tempInfo.document.temperature: 기온
+    * tempInfo.document.icon: 날씨 icon URL
 
 ![](https://user-images.githubusercontent.com/68107000/124441433-a19adf80-ddb6-11eb-9d14-9d8736b524ba.png)
 
-- rainInfo
-  - rainInfo.resultCode: 응답 코드
-  - rainInfo.errorMessage: 에러 메세지 (성공 시 SUCCESS 반환)
-  - rainInfo.document
-    - rainInfo.document.time: 시간
-    - rainInfo.document.rain: 강수량
-    - rainInfo.document.percent: 강수 확률
-    - rainInfo.document.icon: 물방울 icon URL
+* rainInfo
+  * rainInfo.resultCode: 응답 코드
+  * rainInfo.errorMessage: 에러 메세지 \(성공 시 SUCCESS 반환\)
+  * rainInfo.document
+    * rainInfo.document.time: 시간
+    * rainInfo.document.rain: 강수량
+    * rainInfo.document.percent: 강수 확률
+    * rainInfo.document.icon: 물방울 icon URL
 
 ![](https://user-images.githubusercontent.com/68107000/126878184-4b724c1d-025c-4aef-9844-b02681fcc3ae.png)
 
-- ootdInfo
-  - ootdInfo.resultCode: 응답 코드
-  - ootdInfo.errorMessage: 에러 메세지 (성공 시 SUCCESS 반환)
-  - ootdInfo.document
-    - ootdInfo.document.umbrellaIcon: 우산 icon URL
-    - ootdInfo.document.umbrellaFlag: 우산 안내에 대한 flag
-    - ootdInfo.document.clothes
-      - ootdInfo.document.clothes.age: 물방울 icon URL
-      - ootdInfo.document.clothes.top: 상의 icon URL
-      - ootdInfo.document.clothes.bottom: 하의 icon URL
-      - ootdInfo.document.clothes.shoes: 신발 icon URL
-      - ootdInfo.document.clothes.desc: 아이템 설명 // 난해
-      - ootdInfo.document.clothes.reason: 추천 이유 // 난해
+* ootdInfo
+  * ootdInfo.resultCode: 응답 코드
+  * ootdInfo.errorMessage: 에러 메세지 \(성공 시 SUCCESS 반환\)
+  * ootdInfo.document
+    * ootdInfo.document.umbrellaIcon: 우산 icon URL
+    * ootdInfo.document.umbrellaFlag: 우산 안내에 대한 flag
+    * ootdInfo.document.clothes
+      * ootdInfo.document.clothes.age: 물방울 icon URL
+      * ootdInfo.document.clothes.top: 상의 icon URL
+      * ootdInfo.document.clothes.bottom: 하의 icon URL
+      * ootdInfo.document.clothes.shoes: 신발 icon URL
+      * ootdInfo.document.clothes.desc: 아이템 설명 // 난해
+      * ootdInfo.document.clothes.reason: 추천 이유 // 난해
 
 ### Example
 

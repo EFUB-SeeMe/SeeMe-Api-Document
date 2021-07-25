@@ -52,40 +52,40 @@ HTTP Status code: `200 OK`
 <table>
   <thead>
     <tr>
-      <th style="text-align:center">name</th>
-      <th style="text-align:center">type</th>
-      <th style="text-align:center">description</th>
+      <th style="text-align:left">name</th>
+      <th style="text-align:left">type</th>
+      <th style="text-align:left">description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center">resultCode</td>
-      <td style="text-align:center">int</td>
-      <td style="text-align:center">&#xC0C1;&#xD0DC; &#xCF54;&#xB4DC;</td>
+      <td style="text-align:left">resultCode</td>
+      <td style="text-align:left">int</td>
+      <td style="text-align:left">&#xC0C1;&#xD0DC; &#xCF54;&#xB4DC;</td>
     </tr>
     <tr>
-      <td style="text-align:center">errorMessage</td>
-      <td style="text-align:center">string</td>
-      <td style="text-align:center">
+      <td style="text-align:left">errorMessage</td>
+      <td style="text-align:left">string</td>
+      <td style="text-align:left">
         <p>&#xC5D0;&#xB7EC; &#xBC1C;&#xC0DD; &#xC6D0;&#xC778;</p>
         <p>&#xC5D0;&#xB7EC;&#xAC00; &#xBC1C;&#xC0DD;&#xD558;&#xC9C0; &#xC54A;&#xC558;&#xB2E4;&#xBA74;
           null</p>
       </td>
     </tr>
     <tr>
-      <td style="text-align:center">response</td>
-      <td style="text-align:center">string</td>
-      <td style="text-align:center">&#xCEF4;&#xD3EC;&#xB10C;&#xD2B8; &#xC774;&#xB984;</td>
+      <td style="text-align:left">response</td>
+      <td style="text-align:left">string</td>
+      <td style="text-align:left">&#xCEF4;&#xD3EC;&#xB10C;&#xD2B8; &#xC774;&#xB984;</td>
     </tr>
     <tr>
-      <td style="text-align:center">document</td>
-      <td style="text-align:center">object</td>
-      <td style="text-align:center">&#xAC01; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xC758; &#xAC1D;&#xCCB4;</td>
+      <td style="text-align:left">document</td>
+      <td style="text-align:left">object</td>
+      <td style="text-align:left">&#xAC01; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xC758; &#xAC1D;&#xCCB4;</td>
     </tr>
   </tbody>
 </table>
 
-\* resultCode : 값이 잘 호출이 되었는지를 알려주는 코드입니다. 
+\* resultCode : 값이 잘 호출이 되었는지를 알려주는 코드입니다.
 
 * 200: 에러 없이 값이 잘 호출되었음
 
@@ -124,10 +124,8 @@ HTTP Status code: `200 OK`
 
 | name | type | description |
 | :---: | :---: | :---: |
-| maskIcon | string | 마스크 아이콘 URL  |
-| desc | string | 마스크 추천  |
-| cai | double | 통합대기환경지수 |
-| caiFlag | boolean | 통합대기환경지수 값 유무 |
+| maskIcon | string | 마스크 아이콘 URL |
+| desc | string | 마스크 추천 |
 
 \* CAI\(통합대기환경지수\): 미세먼지\(PM10\), 초미세먼지\(PM2.5\), 이산화질소\(NO2\), 오존\(O3\) 이 모두 입력될 경우에만 CAI 산정이 가능합니다.
 
@@ -137,50 +135,50 @@ HTTP Status code: `200 OK`
 
 ```java
 [
-	{
-	  "mainInfo": {
-	    "resultCode": 200,
-	    "errorMessage": null,
-	    "document": {
-	      "grade": "1",
-	      "gradeIcon": "https://seeme-icon.s3.ap-northeast-2.amazonaws.com/icon/microdust/pm/good.png",
-	      "pm10Flag": true,
-	      "pm25Flag": true,
-	      "pm10": 22,
-	      "pm25": 15,
-	      "desc": "야외 활동을 즐겨보세요 !"
-	    }
-	  },
-	  "totalInfo": {
-	    "resultCode": 200,
-	    "errorMessage": null,
-	    "document": {
-	      "pm10Flag": true,
-	      "pm25Flag": true,
-	      "so2Flag": true,
-	      "coFlag": true,
-	      "o3Flag": true,
-	      "no2Flag": true,
-	      "caiFlag": true,
-	      "pm10": 22.0,
-	      "pm25": 15.0,
-	      "so2": 0.002,
-	      "co": 0.5,
-	      "o3": 0.07,
-	      "no2": 0.003,
-	      "cai": 83.0,
-	      "caiIcon": "https://seeme-icon.s3.ap-northeast-2.amazonaws.com/icon/microdust/cai/soso.png"
-	    }
-	  },
-	  "maskInfo": {
-	    "resultCode": 200,
-	    "errorMessage": null,
-	    "document": {
-	      "maskIcon": "https://seeme-icon.s3.ap-northeast-2.amazonaws.com/icon/mask/dental.png",
-	      "desc": "미세먼지 좋아요~ 덴탈마스크 추천!"
-	    }
-	  }
-	}
+    {
+      "mainInfo": {
+        "resultCode": 200,
+        "errorMessage": null,
+        "document": {
+          "grade": "1",
+          "gradeIcon": "https://seeme-icon.s3.ap-northeast-2.amazonaws.com/icon/microdust/pm/good.png",
+          "pm10Flag": true,
+          "pm25Flag": true,
+          "pm10": 22,
+          "pm25": 15,
+          "desc": "야외 활동을 즐겨보세요 !"
+        }
+      },
+      "totalInfo": {
+        "resultCode": 200,
+        "errorMessage": null,
+        "document": {
+          "pm10Flag": true,
+          "pm25Flag": true,
+          "so2Flag": true,
+          "coFlag": true,
+          "o3Flag": true,
+          "no2Flag": true,
+          "caiFlag": true,
+          "pm10": 22.0,
+          "pm25": 15.0,
+          "so2": 0.002,
+          "co": 0.5,
+          "o3": 0.07,
+          "no2": 0.003,
+          "cai": 83.0,
+          "caiIcon": "https://seeme-icon.s3.ap-northeast-2.amazonaws.com/icon/microdust/cai/soso.png"
+        }
+      },
+      "maskInfo": {
+        "resultCode": 200,
+        "errorMessage": null,
+        "document": {
+          "maskIcon": "https://seeme-icon.s3.ap-northeast-2.amazonaws.com/icon/mask/dental.png",
+          "desc": "미세먼지 좋아요~ 덴탈마스크 추천!"
+        }
+      }
+    }
 ]
 ```
 
@@ -198,39 +196,38 @@ HTTP Status code: `200 OK`
 
 ```java
 {
-	[
-		{
-				"resultCode": 500
-				"errorMessage": "API_PROVISION_ERROR"
-				"response": "main"
-				"document": null
-		},
-		{
-				"resultCode": 200
-				"errorMessage": null
-				"response": "rec"
-				"document": 
-				{
-						"so2Value": 10,
-						"coValue": 20,
-						"o3Value": 15,
-						"no2Value": 32
-				}
-		},
-		{
-				"resultCode": 200
-				"errorMessage": null
-				"response": "rec"
-				"document": 
-				{
-						"maskIcon": "https://seeme-icon.s3.ap-northeast-2.amazonaws.com/icon/mask/dental.png",
-						"desc"‘: "미세먼지 좋아요~ 덴탈마스크 추천!"
-						"CAI": 49.32113,
-						"CAIFlag": true
-				}
-		}
-	]
+    [
+        {
+                "resultCode": 500
+                "errorMessage": "API_PROVISION_ERROR"
+                "response": "main"
+                "document": null
+        },
+        {
+                "resultCode": 200
+                "errorMessage": null
+                "response": "rec"
+                "document": 
+                {
+                        "so2Value": 10,
+                        "coValue": 20,
+                        "o3Value": 15,
+                        "no2Value": 32
+                }
+        },
+        {
+                "resultCode": 200
+                "errorMessage": null
+                "response": "rec"
+                "document": 
+                {
+                        "maskIcon": "https://seeme-icon.s3.ap-northeast-2.amazonaws.com/icon/mask/dental.png",
+                        "desc"‘: "미세먼지 좋아요~ 덴탈마스크 추천!"
+                        "CAI": 49.32113,
+                        "CAIFlag": true
+                }
+        }
+    ]
 }
-
 ```
 

@@ -20,17 +20,17 @@ GET /weather/main
 
 ![](https://user-images.githubusercontent.com/68107000/124440780-f427cc00-ddb5-11eb-859f-a3d9d53492eb.png)
 
-- resultCode: 응답 코드 (≠ status code, =서버가 자체적으로 만든 코드, 추후 error code에 정리)
-- errorMessage: 에러 메세지 (성공 시 SUCCESS 반환)
-- document
-  - document.icon:  아이콘 URL
-  - document.iconDesc: 아이콘 설명
-  - document.currTemp: 현재 온도
-  - document.feelTemp: 체감 온도
-  - document.max: 최고 온도
-  - document.min: 최저 온도
-  - document.desc: 오늘 날씨에 대한 설명
-  - document.comp: 전날과의 비교설명
+* resultCode: 응답 코드 \(≠ status code, =서버가 자체적으로 만든 코드, 추후 error code에 정리\)
+* errorMessage: 에러 메세지 \(성공 시 SUCCESS 반환\)
+* document
+  * document.icon:  아이콘 URL
+  * document.iconDesc: 아이콘 설명
+  * document.currTemp: 현재 온도
+  * document.feelTemp: 체감 온도
+  * document.max: 최고 온도
+  * document.min: 최저 온도
+  * document.desc: 오늘 날씨에 대한 설명
+  * document.comp: 전날과의 비교설명
 
 ### Example
 
@@ -55,6 +55,6 @@ GET /weather/main
 
 | error code | error message | description |
 | :--- | :--- | :--- |
-|  | JSON_PARSING_ERROR      | api의 잘못된 응답으로 인한 json 문서 파싱 에러 |
+|  | JSON\_PARSING\_ERROR | api의 잘못된 응답으로 인한 json 문서 파싱 에러 |
 | 500 | INTERNAL\_SERVER\_ERROR | 서버 내부 에러 |
 

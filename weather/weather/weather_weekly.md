@@ -20,16 +20,16 @@ HTTP Status code: `200 OK`
 
 ![](https://user-images.githubusercontent.com/68107000/124441608-ce4ef700-ddb6-11eb-9662-15127c555a16.png)
 
-- resultCode: 응답 코드 (≠ status code, =서버가 자체적으로 만든 코드, 추후 error code에 정리)
-- errorMessage: 에러 메세지 (성공 시 SUCCESS 반환)
-- document
-  - document.day: 날짜, 1월 1일 (월) 과 같은 형식
-  - document.amRain: 오전 강수 확률
-  - document.amIcon: 오전 날씨 icon URL
-  - document.pmRain: 오후 강수 확률
-  - document.pmIcon: 오후 날씨 icon URL
-  - document.max: 최고 온도
-  - document.min: 최저 온도
+* resultCode: 응답 코드 \(≠ status code, =서버가 자체적으로 만든 코드, 추후 error code에 정리\)
+* errorMessage: 에러 메세지 \(성공 시 SUCCESS 반환\)
+* document
+  * document.day: 날짜, 1월 1일 \(월\) 과 같은 형식
+  * document.amRain: 오전 강수 확률
+  * document.amIcon: 오전 날씨 icon URL
+  * document.pmRain: 오후 강수 확률
+  * document.pmIcon: 오후 날씨 icon URL
+  * document.max: 최고 온도
+  * document.min: 최저 온도
 
 ### Example
 
@@ -109,6 +109,6 @@ HTTP Status code: `200 OK`
 
 | error code | error message | description |
 | :--- | :--- | :--- |
-|            | JSON_PARSING_ERROR      | api의 잘못된 응답으로 인한 json 문서 파싱 에러 |
-| 500        | INTERNAL\_SERVER\_ERROR | 서버 내부 에러 |
+|  | JSON\_PARSING\_ERROR | api의 잘못된 응답으로 인한 json 문서 파싱 에러 |
+| 500 | INTERNAL\_SERVER\_ERROR | 서버 내부 에러 |
 
