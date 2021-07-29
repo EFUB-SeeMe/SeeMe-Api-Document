@@ -45,26 +45,14 @@ HTTP Status code: `200 OK`
 
 ### Description
 
-![main](../../.gitbook/assets/.png%20%281%29.png)
+**main document**
 
-![rec](../../.gitbook/assets/.png%20%282%29.png)
+![image](https://user-images.githubusercontent.com/68107000/127577262-0a6ac7e3-3e87-48e5-90f9-e8cb8b30ecb6.png)
 
-| name | type | description |
-| :--- | :--- | :--- |
-| resultCode | int | 상태 코드 |
-| errorMessage | string | 에러 발생 원인 |
-| document | object | 각 컴포넌트의 객체 |
 
-\* resultCode : 값이 잘 호출이 되었는지를 알려주는 코드입니다.
-
-* 200: 에러 없이 값이 잘 호출되었음
-
-\* document : 밑의 각 컴포넌트별 document 참고
-
-### **main document**
 
 | name | type | description |
-| :---: | :---: | :---: |
+| :---: | :---: | :---- |
 | grade | string | 현재 미세먼지 등급 좋음, 보통, 나쁨, 매우나쁨 의 값을 나타냄 |
 | gradeIcon | string | 아이콘 이미지 URL |
 | pm10Flag | boolean | 미세먼지 농도 값 유무 |
@@ -73,7 +61,11 @@ HTTP Status code: `200 OK`
 | pm25 | int | 현재 초미세먼지 농도 |
 | desc | string | 설명 |
 
-### **total document**
+**total document**
+
+![image](https://user-images.githubusercontent.com/68107000/127577218-b26095f1-2d57-43cf-8818-fb0e821b7f46.png)
+
+
 
 | name | type | description |
 | :---: | :---: | :--- |
@@ -90,69 +82,66 @@ HTTP Status code: `200 OK`
 | o3 | double | 오존 농도 |
 | no2 | double | 이산화질소 농도 |
 
-### **mask document**
+**mask document**
+
+![image](https://user-images.githubusercontent.com/68107000/127577301-f9e01dc6-0965-4b69-a469-5b996b7a3e46.png)
 
 | name | type | description |
-| :---: | :---: | :---: |
+| :---: | :---: | :---- |
 | maskIcon | string | 마스크 아이콘 URL |
 | desc | string | 마스크 추천 |
 
-\* CAI\(통합대기환경지수\): 미세먼지\(PM10\), 초미세먼지\(PM2.5\), 이산화질소\(NO2\), 오존\(O3\) 이 모두 입력될 경우에만 CAI 산정이 가능합니다.
 
-→ 미세먼지, 초미세먼지, 이산화질소, 오존 중 하나 이상의 값이 입력되지 않는다면 caiFlag는 False를 반환
 
 ### Example
 
 ```java
-[
-    {
-      "mainInfo": {
-        "resultCode": 200,
-        "errorMessage": null,
-        "document": {
-          "grade": "1",
-          "gradeIcon": "https://seeme-icon.s3.ap-northeast-2.amazonaws.com/icon/microdust/pm/good.png",
-          "pm10Flag": true,
-          "pm25Flag": true,
-          "pm10": 22,
-          "pm25": 15,
-          "desc": "야외 활동을 즐겨보세요 !"
-        }
-      },
-      "totalInfo": {
-        "resultCode": 200,
-        "errorMessage": null,
-        "document": {
-          "pm10Flag": true,
-          "pm25Flag": true,
-          "so2Flag": true,
-          "coFlag": true,
-          "o3Flag": true,
-          "no2Flag": true,
-          "caiFlag": true,
-          "pm10": 22.0,
-          "pm25": 15.0,
-          "so2": 0.002,
-          "co": 0.5,
-          "o3": 0.07,
-          "no2": 0.003,
-          "cai": 83.0,
-          "caiIcon": "https://seeme-icon.s3.ap-northeast-2.amazonaws.com/icon/microdust/cai/soso.png"
-        }
-      },
-      "maskInfo": {
-        "resultCode": 200,
-        "errorMessage": null,
-        "document": {
-          "maskIcon": "https://seeme-icon.s3.ap-northeast-2.amazonaws.com/icon/mask/dental.png",
-          "desc": "미세먼지 좋아요~ 덴탈마스크 추천!"
-        }
-      }
-    }
-]
-```
 
-\* resultCode가 200 → 에러 없이 값이 잘 호출 되었음 → errorMessage가 null로 반환되고, document에 각 컴포넌트별 반환값이 저장됨
+{
+    "mainInfo": {
+        "resultCode": 200,
+        "errorMessage": "SUCCESS",
+        "document": {
+            "grade": "보통",
+            "gradeIcon": "https://seeme-icon.s3.ap-northeast-2.amazonaws.com/icon/microdust/pm/soso.png",
+            "pm10Flag": true,
+            "pm25Flag": true,
+            "pm10": 29,
+            "pm25": 17,
+            "desc": "적당한 야외 활동은 괜찮아요 ~"
+        }
+    },
+    "totalInfo": {
+        "resultCode": 200,
+        "errorMessage": "SUCCESS",
+        "document": {
+            "pm10Flag": true,
+            "pm25Flag": true,
+            "so2Flag": true,
+            "coFlag": true,
+            "o3Flag": true,
+            "no2Flag": true,
+            "caiFlag": true,
+            "pm10": 29.0,
+            "pm25": 17.0,
+            "so2": 0.003,
+            "co": 0.4,
+            "o3": 0.009,
+            "no2": 0.032,
+            "cai": 54.0,
+            "caiIcon": "https://seeme-icon.s3.ap-northeast-2.amazonaws.com/icon/microdust/cai/soso.png"
+        }
+    },
+    "maskInfo": {
+        "resultCode": 200,
+        "errorMessage": null,
+        "document": {
+            "maskIcon": "https://seeme-icon.s3.ap-northeast-2.amazonaws.com/icon/mask/kf80.png",
+            "desc": "미세먼지가 꽤 있어요 ㅠㅠ kf80 추천!"
+        }
+    }
+}
+```
 
 ## 3\) ERROR CODE
 
@@ -165,24 +154,23 @@ HTTP Status code: `200 OK`
 ### Example
 
 ```java
-[
-    {
-      "mainInfo": {
+{
+    "mainInfo": {
         "resultCode": 500,
         "errorMessage": "API_PROVISION_ERROR",
         "document": null
-      },
-      "totalInfo": {
+    },
+    "totalInfo": {
         "resultCode": 200,
         "errorMessage": "API_PROVISION_ERROR",
         "document": null
-      },
-      "maskInfo": {
+    },
+    "maskInfo": {
         "resultCode": 200,
         "errorMessage": "API_PROVISION_ERROR",
         "document": null
-      }
     }
-]
+}
+
 ```
 

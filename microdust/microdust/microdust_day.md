@@ -39,13 +39,13 @@ GET /microdust/day?code=2824510700
 
 ## 2\) RESPONSE BODY
 
-![day](../../.gitbook/assets/.png%20%283%29.png)
-
 ### Success http status code
 
 HTTP Status code : `200 OK`
 
 ### Description
+
+![day](../../.gitbook/assets/.png%20%283%29.png)
 
 | name | type | description |
 | :---: | :---: | :---: |
@@ -57,31 +57,31 @@ HTTP Status code : `200 OK`
 
 ```java
 [
-  {
-    "dust": 19,
-    "microdust": 19,
-    "date": "07.18"
-  },
-  {
-    "dust": 21,
-    "microdust": 20,
-    "date": "07.19"
-  },
-  {
-    "dust": 28,
-    "microdust": 26,
-    "date": "07.20"
-  },
-  {
-    "dust": 22,
-    "microdust": 21,
-    "date": "07.21"
-  },
-  {
-    "dust": 21,
-    "microdust": 20,
-    "date": "07.22"
-  }
+    {
+        "dust": 19,
+        "microdust": 19,
+        "date": "07.18"
+    },
+    {
+        "dust": 21,
+        "microdust": 20,
+        "date": "07.19"
+    },
+    {
+        "dust": 28,
+        "microdust": 26,
+        "date": "07.20"
+    },
+    {
+        "dust": 22,
+        "microdust": 21,
+        "date": "07.21"
+    },
+    {
+        "dust": 21,
+        "microdust": 20,
+        "date": "07.22"
+    }
 ]
 ```
 
