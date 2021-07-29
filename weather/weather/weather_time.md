@@ -1,14 +1,35 @@
----
-description: 시간대별 강수량을 알려주는 api
----
+description: ""시간대별 기온, 시간대별 강수량, ootd 정보를 반환하는 api"
 
-# 시간대별 날씨 페이지
+# 시간대별 날씨, OOTD 페이지
 
 ## 1\) URL
 
 ```text
 GET /weather/time
 ```
+
+### Request Parameter1
+
+| parameter | requirement | description |
+| :-------: | :---------: | :---------- |
+|    lat    |      N      | 위도        |
+|    lon    |      N      | 경도        |
+
+```text
+GET /weather/time?lat=37.5145963013281&lon=126.9754626313914
+```
+
+### Request Parameter 2
+
+| parameter | requirement | description    |
+| :-------: | :---------: | :------------- |
+|   code    |      N      | 행정 구역 코드 |
+
+```text
+GET /weather/time?code=2824510700
+```
+
+\* 검색 시 해당 파라미터를 이용하여 호출할 수 있습니다.
 
 ## 2\) RESPONSE BODY
 
@@ -21,7 +42,7 @@ HTTP Status code: `200 OK`
 ![](https://user-images.githubusercontent.com/68107000/124440085-31d82500-ddb5-11eb-9a1e-b9cc888a4380.png)
 
 * tempInfo
-  * tempInfo.resultCode: 응답 코드
+  * tempInfo.resultCode: 응답 코드 (200 = SUCCESS, 500 = ERROR)
   * tempInfo.errorMessage: 에러 메세지 \(성공 시 SUCCESS 반환\)
   * tempInfo.document
     * tempInfo.document.time:  시간
@@ -31,7 +52,7 @@ HTTP Status code: `200 OK`
 ![](https://user-images.githubusercontent.com/68107000/124441433-a19adf80-ddb6-11eb-9d14-9d8736b524ba.png)
 
 * rainInfo
-  * rainInfo.resultCode: 응답 코드
+  * rainInfo.resultCode: 응답 코드 (200 = SUCCESS, 500 = ERROR)
   * rainInfo.errorMessage: 에러 메세지 \(성공 시 SUCCESS 반환\)
   * rainInfo.document
     * rainInfo.document.time: 시간
@@ -41,8 +62,8 @@ HTTP Status code: `200 OK`
 
 ![](https://user-images.githubusercontent.com/68107000/126878184-4b724c1d-025c-4aef-9844-b02681fcc3ae.png)
 
-* ootdInfo
-  * ootdInfo.resultCode: 응답 코드
+* ootdInfo // 수정 중!!!
+  * ootdInfo.resultCode: 응답 코드 (200 = SUCCESS, 500 = ERROR)
   * ootdInfo.errorMessage: 에러 메세지 \(성공 시 SUCCESS 반환\)
   * ootdInfo.document
     * ootdInfo.document.umbrellaIcon: 우산 icon URL
@@ -52,8 +73,8 @@ HTTP Status code: `200 OK`
       * ootdInfo.document.clothes.top: 상의 icon URL
       * ootdInfo.document.clothes.bottom: 하의 icon URL
       * ootdInfo.document.clothes.shoes: 신발 icon URL
-      * ootdInfo.document.clothes.desc: 아이템 설명 // 난해
-      * ootdInfo.document.clothes.reason: 추천 이유 // 난해
+      * ootdInfo.document.clothes.desc: 아이템 설명
+      * ootdInfo.document.clothes.reason: 추천 이유
 
 ### Example
 
@@ -136,7 +157,7 @@ HTTP Status code: `200 OK`
 
 ## 3\) ERROR CODE
 
-| error code | error message | description |
-| :--- | :--- | :--- |
-| 500 | INTERNAL\_SERVER\_ERROR | 서버 내부 에러 |
-
+| error code | error message           | description                                    |
+| :--------- | :---------------------- | ---------------------------------------------- |
+| 500        | JSON\_PARSING\_ERROR    | api의 잘못된 응답으로 인한 json 문서 파싱 에러 |
+| 500        | INTERNAL\_SERVER\_ERROR | 서버 내부 에러                                 |

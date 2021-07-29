@@ -12,6 +12,8 @@ description: '요일별 오전, 오후 미세먼지 및 초미세먼지 농도�
 GET /microdust/day
 ```
 
+\* 요청 파라미터가 없을 때, _서울특별시 서대문구 대현동_의 값을 보여줍니다.
+
 ### Request Parameter1
 
 | parameter | requirement | description |
@@ -22,8 +24,6 @@ GET /microdust/day
 ```text
 GET /microdust/day/lat=37.5145963013281&lon=126.9754626313914
 ```
-
-\* lat 또는 lon 둘 중 하나라도 값이 없는 경우에는, _서울특별시 서대문구 대현동_의 값을 보여줍니다.
 
 ### Request Parameter 2
 

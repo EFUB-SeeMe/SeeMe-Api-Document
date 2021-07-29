@@ -12,6 +12,8 @@ description: "미세먼지 페이지 관련 API입니다\U0001F60A"
 GET /microdust/main
 ```
 
+\* 요청 파라미터가 없을 때, 서울특별시 용산구 이촌동의 값을 보여줍니다.
+
 ### Request Parameter1
 
 | parameter | requirement | description |
@@ -23,13 +25,11 @@ GET /microdust/main
 GET /microdust/main?lat=37.5145963013281&lon=126.9754626313914
 ```
 
-\* lat 또는 lon 둘 중 하나라도 값이 없는 경우에는, 서울특별시 용산구 이촌동의 값을 보여줍니다.
-
 ### Request Parameter 2
 
 | parameter | requirement | description |
 | :---: | :---: | :--- |
-| code | N | 행정동코드 |
+| code | N | 행정 구역 코드 |
 
 ```text
 GET /microdust/main?code=2824510700
@@ -68,14 +68,7 @@ HTTP Status code: `200 OK`
       <td style="text-align:left">string</td>
       <td style="text-align:left">
         <p>&#xC5D0;&#xB7EC; &#xBC1C;&#xC0DD; &#xC6D0;&#xC778;</p>
-        <p>&#xC5D0;&#xB7EC;&#xAC00; &#xBC1C;&#xC0DD;&#xD558;&#xC9C0; &#xC54A;&#xC558;&#xB2E4;&#xBA74;
-          null</p>
       </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">response</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#xCEF4;&#xD3EC;&#xB10C;&#xD2B8; &#xC774;&#xB984;</td>
     </tr>
     <tr>
       <td style="text-align:left">document</td>
@@ -84,6 +77,7 @@ HTTP Status code: `200 OK`
     </tr>
   </tbody>
 </table>
+
 
 \* resultCode : 값이 잘 호출이 되었는지를 알려주는 코드입니다.
 
@@ -186,48 +180,35 @@ HTTP Status code: `200 OK`
 
 ## 3\) ERROR CODE
 
-| error message | description |
-| :---: | :---: |
-| API\_PROVISION\_ERROR | API 제공사의 문제 |
+| error code |     error message     | description               |
+| :---: | :---: | ----- |
+|    500     | API\_PROVISION\_ERROR | API 제공사의 문제 |
+| 500 | JSON_PARSING_ERROR | json 파싱 과정에서의 문제 |
+| 500 | UNKNOWN_ERROR | 이 외 |
 
 * 이 후 에러 메시지와 코드가 추가될 예정입니다.
 
 ### Example
 
 ```java
-{
-    [
-        {
-                "resultCode": 500
-                "errorMessage": "API_PROVISION_ERROR"
-                "response": "main"
-                "document": null
-        },
-        {
-                "resultCode": 200
-                "errorMessage": null
-                "response": "rec"
-                "document": 
-                {
-                        "so2Value": 10,
-                        "coValue": 20,
-                        "o3Value": 15,
-                        "no2Value": 32
-                }
-        },
-        {
-                "resultCode": 200
-                "errorMessage": null
-                "response": "rec"
-                "document": 
-                {
-                        "maskIcon": "https://seeme-icon.s3.ap-northeast-2.amazonaws.com/icon/mask/dental.png",
-                        "desc"‘: "미세먼지 좋아요~ 덴탈마스크 추천!"
-                        "CAI": 49.32113,
-                        "CAIFlag": true
-                }
-        }
-    ]
-}
+[
+    {
+      "mainInfo": {
+        "resultCode": 500,
+        "errorMessage": "API_PROVISION_ERROR",
+        "document": null
+      },
+      "totalInfo": {
+        "resultCode": 200,
+        "errorMessage": "API_PROVISION_ERROR",
+        "document": null
+      },
+      "maskInfo": {
+        "resultCode": 200,
+        "errorMessage": "API_PROVISION_ERROR",
+        "document": null
+      }
+    }
+]
 ```
 

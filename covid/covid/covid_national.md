@@ -9,7 +9,7 @@ description: 전국 확진자 추이를 알려주는 api
 ### Request URL
 
 ```text
-GET /covid/national
+GET /covid/nation
 ```
 
 ## 2\) RESPONSE BODY
