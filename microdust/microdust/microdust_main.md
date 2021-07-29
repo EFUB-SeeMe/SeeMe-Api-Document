@@ -2,7 +2,7 @@
 description: "미세먼지, 통합 대기질, 마스크 추천 정보를 반환하는 api\U0001F60A"
 ---
 
-# 미세먼지, 통합 대기질, 마스크 추천 페이지
+# 메인 페이지
 
 ## 1\) URL
 
@@ -49,35 +49,11 @@ HTTP Status code: `200 OK`
 
 ![rec](../../.gitbook/assets/.png%20%282%29.png)
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">name</th>
-      <th style="text-align:left">type</th>
-      <th style="text-align:left">description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">resultCode</td>
-      <td style="text-align:left">int</td>
-      <td style="text-align:left">&#xC0C1;&#xD0DC; &#xCF54;&#xB4DC;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">errorMessage</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">
-        <p>&#xC5D0;&#xB7EC; &#xBC1C;&#xC0DD; &#xC6D0;&#xC778;</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">document</td>
-      <td style="text-align:left">object</td>
-      <td style="text-align:left">&#xAC01; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xC758; &#xAC1D;&#xCCB4;</td>
-    </tr>
-  </tbody>
-</table>
-
+| name | type | description |
+| :--- | :--- | :--- |
+| resultCode | int | 상태 코드 |
+| errorMessage | string | 에러 발생 원인 |
+| document | object | 각 컴포넌트의 객체 |
 
 \* resultCode : 값이 잘 호출이 되었는지를 알려주는 코드입니다.
 
@@ -180,11 +156,11 @@ HTTP Status code: `200 OK`
 
 ## 3\) ERROR CODE
 
-| error code |     error message     | description               |
-| :---: | :---: | ----- |
-|    500     | API\_PROVISION\_ERROR | API 제공사의 문제 |
-| 500 | JSON_PARSING_ERROR | json 파싱 과정에서의 문제 |
-| 500 | UNKNOWN_ERROR | 이 외 |
+| error code | error message | description |
+| :---: | :---: | :--- |
+| 500 | API\_PROVISION\_ERROR | API 제공사의 문제 |
+| 500 | JSON\_PARSING\_ERROR | json 파싱 과정에서의 문제 |
+| 500 | UNKNOWN\_ERROR | 이 외 |
 
 ### Example
 

@@ -1,5 +1,5 @@
 ---
-description: 읍면동의 시도, 행정구역코드, 위경도 정보를 반환하는 api
+description: '읍면동의 시도, 행정구역코드, 위경도 정보를 반환하는 api'
 ---
 
 # 읍면동에서 변환
@@ -30,13 +30,13 @@ GET /location/umd
 
 ### Description
 
-- totalCount: 검색된 주소 개수
-- addressList: 검색된 주소 목록
-  - addressList.sidoShort: 2자리 축약된 형태의 시도
-  - addressList.address: 시도, 시군구, 읍면동을 이어붙인 주소
-  - addressList.addressCode: 행정구역코드
-  - addressList.lat: 위도
-  - addressList.lon: 경도
+* totalCount: 검색된 주소 개수
+* addressList: 검색된 주소 목록
+  * addressList.sidoShort: 2자리 축약된 형태의 시도
+  * addressList.address: 시도, 시군구, 읍면동을 이어붙인 주소
+  * addressList.addressCode: 행정구역코드
+  * addressList.lat: 위도
+  * addressList.lon: 경도
 
 ### Example
 
@@ -97,7 +97,7 @@ GET /location/umd
 }
 ```
 
-## 3) Error
+## 3\) Error
 
 ### Example
 

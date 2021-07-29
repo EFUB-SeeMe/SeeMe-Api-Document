@@ -1,8 +1,8 @@
 ---
-description: "현재 날씨, 이번주 날씨 정보를 반환하는 api\U0001F60E"  
+description: "현재 날씨, 이번주 날씨 정보를 반환하는 api\U0001F60E"
 ---
 
-# 현재, 이번주 날씨 페이지
+# 메인 페이지
 
 ## 1\) URL
 
@@ -13,9 +13,9 @@ GET /weather/main
 ### Request Parameter1
 
 | parameter | requirement | description |
-| :-------: | :---------: | :---------- |
-|    lat    |      N      | 위도        |
-|    lon    |      N      | 경도        |
+| :---: | :---: | :--- |
+| lat | N | 위도 |
+| lon | N | 경도 |
 
 ```text
 GET /weather/main?lat=37.5145963013281&lon=126.9754626313914
@@ -23,9 +23,9 @@ GET /weather/main?lat=37.5145963013281&lon=126.9754626313914
 
 ### Request Parameter 2
 
-| parameter | requirement | description    |
-| :-------: | :---------: | :------------- |
-|   code    |      N      | 행정 구역 코드 |
+| parameter | requirement | description |
+| :---: | :---: | :--- |
+| code | N | 행정 구역 코드 |
 
 ```text
 GET /weather/main?code=2824510700
@@ -44,7 +44,7 @@ GET /weather/main?code=2824510700
 ![](https://user-images.githubusercontent.com/68107000/124440780-f427cc00-ddb5-11eb-859f-a3d9d53492eb.png)
 
 * currentInfo
-  * currentInfo.resultCode: 응답 코드 (200 = SUCCESS, 500 = ERROR)
+  * currentInfo.resultCode: 응답 코드 \(200 = SUCCESS, 500 = ERROR\)
   * currentInfo.errorMessage: 에러 메세지 \(성공 시 SUCCESS 반환\)
   * currentInfo.document
     * currentInfo.document.currTemp: 현재 온도
@@ -53,7 +53,7 @@ GET /weather/main?code=2824510700
     * currentInfo.document.icon:  아이콘 URL
     * currentInfo.document.comp: 전날과의 비교설명
 * minmaxInfo
-  * minmaxInfo.resultCode: 응답 코드 (200 = SUCCESS, 500 = ERROR)
+  * minmaxInfo.resultCode: 응답 코드 \(200 = SUCCESS, 500 = ERROR\)
   * minmaxInfo.errorMessage: 에러 메세지 \(성공 시 SUCCESS 반환\)
   * minmaxInfo.document
     * minmaxInfo.document.max: 최고 온도
@@ -63,7 +63,7 @@ GET /weather/main?code=2824510700
 ![](https://user-images.githubusercontent.com/68107000/124441608-ce4ef700-ddb6-11eb-9662-15127c555a16.png)
 
 * weekInfo
-  * weekInfo.resultCode: 응답 코드 (200 = SUCCESS, 500 = ERROR)
+  * weekInfo.resultCode: 응답 코드 \(200 = SUCCESS, 500 = ERROR\)
   * weekInfo.errorMessage: 에러 메세지 \(성공 시 SUCCESS 반환\)
   * weekInfo.document
     * weekInfo.document.day: 날짜, 1월 1일 \(월\) 과 같은 형식
@@ -166,8 +166,8 @@ GET /weather/main?code=2824510700
 
 ## 3\) ERROR CODE
 
-| error code | error message           | description                                    |
+| error code | error message | description |
 | :--- | :--- | :--- |
-| 500        | JSON\_PARSING\_ERROR    | api의 잘못된 응답으로 인한 json 문서 파싱 에러 |
-| 500     | UNKNOWN_ERROR | 이 외                              |
+| 500 | JSON\_PARSING\_ERROR | api의 잘못된 응답으로 인한 json 문서 파싱 에러 |
+| 500 | UNKNOWN\_ERROR | 이 외 |
 

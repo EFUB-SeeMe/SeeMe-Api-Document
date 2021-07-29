@@ -7,7 +7,6 @@
 * [날씨](weather/weather/README.md)
   * [메인 페이지](weather/weather/weather_main.md)
   * [시간대별 날씨 페이지](weather/weather/weather_time.md)
-  * [이번주 날씨 페이지](weather/weather/weather_weekly.md)
 
 ## microdust
 
@@ -25,6 +24,6 @@
 ## LOCATION
 
 * [위치변환](location/location/README.md)
-  * [읍면동→행정구역코드](location/location/search.md)
+  * [읍면동에서 변환](location/location/search.md)
   * [위경도→주소](location/location/latlontoaddr.md)
 

@@ -17,7 +17,7 @@ GET /location/latlon2address
 | parameter | requirement | description |
 | :---: | :---: | :---: |
 | lat | Y\(필수\) | 위도 |
-| lon | Y\(필수\) | 경도  |
+| lon | Y\(필수\) | 경도 |
 
 ```text
 /location/latlon2address?lat=37.12335&lon=127.23412
@@ -47,7 +47,7 @@ GET /location/latlon2address
 
 정보가 없거나 json 파싱 과정에서 에러가 발생한 경우
 
-```
+```text
 지원하지 않는 위치입니다.
 ```
 
