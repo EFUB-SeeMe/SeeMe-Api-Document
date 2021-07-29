@@ -9,7 +9,7 @@ description: 위도와 경도를 입력받아 읍면동까지의 주소로 반�
 ### Request URL
 
 ```text
-http://localhost:8080/location/latLonToUmd
+GET /location/latlon2address
 ```
 
 ### Request Parameter
@@ -20,7 +20,7 @@ http://localhost:8080/location/latLonToUmd
 | lon | Y\(필수\) | 경도  |
 
 ```text
-http://localhost:8080/location/latLonToUmd?lat=37.12335&lon=127.23412
+/location/latlon2address?lat=37.12335&lon=127.23412
 ```
 
 ## 2\) RESPONSE BODY
@@ -41,9 +41,11 @@ http://localhost:8080/location/latLonToUmd?lat=37.12335&lon=127.23412
 용인시 처인구 이동읍
 ```
 
-## 3\) ERROR CODE
+## 3\) ERROR
 
-| error code | error message | description |
-| :---: | :---: | :---: |
-| 400 | BAD\_REQUEST | 잘못된 요청 |
+### Example
+
+```
+지원하지 않는 위치입니다.
+```
 
