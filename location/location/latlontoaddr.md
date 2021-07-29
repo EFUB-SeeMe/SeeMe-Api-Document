@@ -45,6 +45,8 @@ GET /location/latlon2address
 
 ### Example
 
+정보가 없거나 json 파싱 과정에서 에러가 발생한 경우
+
 ```
 지원하지 않는 위치입니다.
 ```

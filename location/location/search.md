@@ -1,5 +1,5 @@
 ---
-description: 읍면동 주소를 행정구역코드로 변환하여 서비스를 호출하기 위한 api
+description: 읍면동의 시도, 행정구역코드, 위경도 정보를 반환하는 api
 ---
 
 # 읍면동에서 변환
@@ -31,9 +31,9 @@ GET /location/umd
 ### Description
 
 - totalCount: 검색된 주소 개수
-- addressList: 검색한 읍면동이 포함된 주소 목록
+- addressList: 검색된 주소 목록
   - addressList.sidoShort: 2자리 축약된 형태의 시도
-  - addressList.address: 주소
+  - addressList.address: 시도, 시군구, 읍면동을 이어붙인 주소
   - addressList.addressCode: 행정구역코드
   - addressList.lat: 위도
   - addressList.lon: 경도
@@ -97,7 +97,11 @@ GET /location/umd
 }
 ```
 
-\* 검색 결과가 없는 경우: totalCount 값이 0, addressList 요소 없는 상태로 반환
+## 3) Error
+
+### Example
+
+정보가 없거나 데이터베이스 통신 에러가 발생한 경우
 
 ```yaml
 {
