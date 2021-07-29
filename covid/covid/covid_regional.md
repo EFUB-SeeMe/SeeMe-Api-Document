@@ -22,7 +22,7 @@ GET /covid/region
 | lon | N | 경도 |
 
 ```text
-GET /covid/regional?lat=37.47161263526149&lon=126.71495060184574
+GET /covid/region?lat=37.47161263526149&lon=126.71495060184574
 ```
 
 ### Request Parameter 2
@@ -32,7 +32,7 @@ GET /covid/regional?lat=37.47161263526149&lon=126.71495060184574
 | location | N | 지역 이름 | 서울, 인천, 경기, 제주, 경남, 경북, 전남, 전북, 충남, 충북, 강원, 세종, 울산, 대전, 광주, 대구, 부산 |
 
 ```text
-GET /covid/regional?location=서울
+GET /covid/region?location=서울
 ```
 
 \* 검색 시 해당 파라미터를 이용하여 호출할 수 있습니다.

@@ -186,8 +186,6 @@ HTTP Status code: `200 OK`
 | 500 | JSON_PARSING_ERROR | json 파싱 과정에서의 문제 |
 | 500 | UNKNOWN_ERROR | 이 외 |
 
-* 이 후 에러 메시지와 코드가 추가될 예정입니다.
-
 ### Example
 
 ```java

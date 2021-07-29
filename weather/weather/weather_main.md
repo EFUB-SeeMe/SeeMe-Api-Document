@@ -169,5 +169,5 @@ GET /weather/main?code=2824510700
 | error code | error message           | description                                    |
 | :--- | :--- | :--- |
 | 500        | JSON\_PARSING\_ERROR    | api의 잘못된 응답으로 인한 json 문서 파싱 에러 |
-| 500        | INTERNAL\_SERVER\_ERROR | 서버 내부 에러                                 |
+| 500     | UNKNOWN_ERROR | 이 외                              |
 

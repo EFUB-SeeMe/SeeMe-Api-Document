@@ -1,4 +1,6 @@
-description: ""시간대별 기온, 시간대별 강수량, ootd 정보를 반환하는 api"
+---
+description: "시간대별 기온, 시간대별 강수량, ootd 정보를 반환하는 api"
+---
 
 # 시간대별 날씨, OOTD 페이지
 
@@ -157,7 +159,7 @@ HTTP Status code: `200 OK`
 
 ## 3\) ERROR CODE
 
-| error code | error message           | description                                    |
-| :--------- | :---------------------- | ---------------------------------------------- |
-| 500        | JSON\_PARSING\_ERROR    | api의 잘못된 응답으로 인한 json 문서 파싱 에러 |
-| 500        | INTERNAL\_SERVER\_ERROR | 서버 내부 에러                                 |
+| error code | error message        | description                                    |
+| :--------- | :------------------- | ---------------------------------------------- |
+| 500        | JSON\_PARSING\_ERROR | api의 잘못된 응답으로 인한 json 문서 파싱 에러 |
+| 500        | UNKNOWN_ERROR        | 이 외                                          |
