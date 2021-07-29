@@ -16,8 +16,8 @@ GET /location/latlon
 
 | parameter | requirement | description |
 | :---: | :---: | :---: |
-| lat | Y\(필수\) | 위 |
-| lon | Y\(필수\) | 경 |
+| lat | Y\(필수\) | 위도 |
+| lon | Y\(필수\) | 경도 |
 
 ```markup
 /location/latlon?lat=37.12435&lon=127.48921
