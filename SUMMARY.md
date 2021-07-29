@@ -25,5 +25,6 @@
 
 * [위치변환](location/location/README.md)
   * [읍면동에서 변환](location/location/search.md)
+  * [위경도에서 변환](location/location/undefined.md)
   * [위경도→주소](location/location/latlontoaddr.md)
 
