@@ -51,7 +51,7 @@ GET /location/latlon
 
 정보가 없거나 데이터베이스 통신 에러가 발생한 경우
 
-```typescript
+```java
 {
     "res": false,
     "umd": null,
