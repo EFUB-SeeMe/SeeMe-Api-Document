@@ -42,7 +42,7 @@ GET /location/latlon
     "res": true,
     "umd": "일죽면",
     "addressCode": "4155039032"
-} 
+}
 ```
 
 ## 3\) Error

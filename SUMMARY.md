@@ -18,13 +18,13 @@
 
 * [코로나](covid/covid/README.md)
   * [메인 페이지](covid/covid/covid_main.md)
-  * [전국 확진자 추이 페이지](covid/covid/covid_national.md)
-  * [지역 확진자 추이 페이지](covid/covid/covid_regional.md)
+  * [전국 확진자 추이 페이지](covid/covid/covid_nation.md)
+  * [지역 확진자 추이 페이지](covid/covid/covid_region.md)
 
 ## LOCATION
 
 * [위치변환](location/location/README.md)
-  * [읍면동에서 변환](location/location/search.md)
-  * [위경도에서 변환](location/location/undefined.md)
-  * [위경도→주소](location/location/latlontoaddr.md)
+  * [읍면동에서 변환](location/location/umd.md)
+  * [위경도에서 변환](location/location/latlon.md)
+  * [위경도→주소](location/location/latlon2address.md)
 

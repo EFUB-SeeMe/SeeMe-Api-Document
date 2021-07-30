@@ -49,10 +49,8 @@ HTTP Status code: `200 OK`
 
 ![image](https://user-images.githubusercontent.com/68107000/127577262-0a6ac7e3-3e87-48e5-90f9-e8cb8b30ecb6.png)
 
-
-
 | name | type | description |
-| :---: | :---: | :---- |
+| :---: | :---: | :--- |
 | grade | string | 현재 미세먼지 등급 좋음, 보통, 나쁨, 매우나쁨 의 값을 나타냄 |
 | gradeIcon | string | 아이콘 이미지 URL |
 | pm10Flag | boolean | 미세먼지 농도 값 유무 |
@@ -64,8 +62,6 @@ HTTP Status code: `200 OK`
 **total document**
 
 ![image](https://user-images.githubusercontent.com/68107000/127577218-b26095f1-2d57-43cf-8818-fb0e821b7f46.png)
-
-
 
 | name | type | description |
 | :---: | :---: | :--- |
@@ -87,16 +83,13 @@ HTTP Status code: `200 OK`
 ![image](https://user-images.githubusercontent.com/68107000/127577301-f9e01dc6-0965-4b69-a469-5b996b7a3e46.png)
 
 | name | type | description |
-| :---: | :---: | :---- |
+| :---: | :---: | :--- |
 | maskIcon | string | 마스크 아이콘 URL |
 | desc | string | 마스크 추천 |
-
-
 
 ### Example
 
 ```java
-
 {
     "mainInfo": {
         "resultCode": 200,
@@ -171,6 +164,5 @@ HTTP Status code: `200 OK`
         "document": null
     }
 }
-
 ```
 
