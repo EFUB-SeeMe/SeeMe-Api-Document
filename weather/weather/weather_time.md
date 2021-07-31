@@ -62,22 +62,6 @@ HTTP Status code: `200 OK`
     * rainInfo.document.percent: 강수 확률
     * rainInfo.document.icon: 물방울 icon URL
 
-![](https://user-images.githubusercontent.com/68107000/126878184-4b724c1d-025c-4aef-9844-b02681fcc3ae.png)
-
-* ootdInfo // 수정 중!!!
-  * ootdInfo.resultCode: 응답 코드 \(200 = SUCCESS, 500 = ERROR\)
-  * ootdInfo.errorMessage: 에러 메세지 \(성공 시 SUCCESS 반환\)
-  * ootdInfo.document
-    * ootdInfo.document.umbrellaIcon: 우산 icon URL
-    * ootdInfo.document.umbrellaFlag: 우산 안내에 대한 flag
-    * ootdInfo.document.clothes
-      * ootdInfo.document.clothes.age: 물방울 icon URL
-      * ootdInfo.document.clothes.top: 상의 icon URL
-      * ootdInfo.document.clothes.bottom: 하의 icon URL
-      * ootdInfo.document.clothes.shoes: 신발 icon URL
-      * ootdInfo.document.clothes.desc: 아이템 설명
-      * ootdInfo.document.clothes.reason: 추천 이유
-
 ### Example
 
 ```javascript
@@ -137,22 +121,6 @@ HTTP Status code: `200 OK`
                 "icon": "https://seeme-icon.s3.ap-northeast-2.amazonaws.com/icon/weather/rain/10.png"
             }
         ]
-    },
-    "ootdInfo": {
-        "resultCode": 200,
-        "errorMessage": "SUCCESS",
-        "document": {
-            "umbrellaIcon": "umbrella.png",
-            "umbrellaFlag": true,
-            "clothes": {
-                "age": 20,
-                "top": "top.png",
-                "bottom": "bottom.png",
-                "shoes": "shoes.png"
-                "desc": "아이템 설명",
-                "reason": "추천 이유"
-            }
-        }
     }
 }
 ```
