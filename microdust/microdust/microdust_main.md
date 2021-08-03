@@ -65,18 +65,14 @@ HTTP Status code: `200 OK`
 
 | name | type | description |
 | :---: | :---: | :--- |
-| pm10Flag | boolean | 미세먼지 농도 값 유무 |
-| pm25Flag | boolean | 초미세먼지 농도 값 유무 |
 | so2Flag | boolean | 아황산가스 농도 값 유무 |
-| coFlag | boolean | 일산화탄소 농도 값 유무 |
-| o3Flag | boolean | 오존 농도 값 유무 |
+| coFlag  | boolean | 일산화탄소 농도 값 유무 |
+| o3Flag  | boolean | 오존 농도 값 유무       |
 | no2Flag | boolean | 이산화질소 농도 값 유무 |
-| pm10 | double | 미세먼지 농도 |
-| pm25 | double | 초미세먼지 농도 |
-| so2 | double | 아황산가스 농도 |
-| co | double | 일산화탄소 농도 |
-| o3 | double | 오존 농도 |
-| no2 | double | 이산화질소 농도 |
+|   so2   | double  | 아황산가스 농도         |
+|   co    | double  | 일산화탄소 농도         |
+|   o3    | double  | 오존 농도               |
+|   no2   | double  | 이산화질소 농도 |
 
 **mask document**
 
@@ -108,15 +104,11 @@ HTTP Status code: `200 OK`
         "resultCode": 200,
         "errorMessage": "SUCCESS",
         "document": {
-            "pm10Flag": true,
-            "pm25Flag": true,
             "so2Flag": true,
             "coFlag": true,
             "o3Flag": true,
             "no2Flag": true,
             "caiFlag": true,
-            "pm10": 29.0,
-            "pm25": 17.0,
             "so2": 0.003,
             "co": 0.4,
             "o3": 0.009,
